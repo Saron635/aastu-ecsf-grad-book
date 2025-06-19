@@ -10,7 +10,7 @@ const nextConfig = {
     unoptimized: true,
   },
   images: {
-    domains: ['drive.usercontent.google.com'],
+    domains: ['drive.usercontent.google.com', "drive.google.com"],
   },
 }
 

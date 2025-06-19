@@ -5,11 +5,25 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, Filter, ChevronLeft, ChevronRight } from "lucide-react";
 import StudentCard from "@/components/StudentCard";
-import StudentModal from "@/components/StudentModal";
 import { useTheme } from "@/contexts/ThemeContext";
 import { translations } from "@/data/translations";
 import { studentsData } from "@/data/studentsData";
 import Image from "next/image";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
+import {
+  Select,
+  SelectTrigger,
+  SelectContent,
+  SelectItem,
+  SelectValue,
+} from "@/components/ui/select";
 
 // Add Student type
 interface Student {
@@ -30,10 +44,24 @@ export default function StudentsSection() {
   const [isFlipping, setIsFlipping] = useState(false);
   const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);
   const studentsPerPage = 2;
-
-  const filteredStudents = students.filter((student) =>
-    student.name.toLowerCase().includes(searchTerm.toLowerCase())
+  const [fullscreenImages, setFullscreenImages] = useState<string[] | null>(
+    null
   );
+  const [fullscreenStartIndex, setFullscreenStartIndex] = useState(0);
+  const [fieldFilter, setFieldFilter] = useState<string>("all");
+
+  const uniqueFields = Array.from(
+    new Set(students.map((s) => s.fieldOfStudy).filter(Boolean))
+  );
+
+  const filteredStudents = students.filter((student) => {
+    const matchesName = student.name
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
+    const matchesField =
+      fieldFilter === "all" ? true : student.fieldOfStudy === fieldFilter;
+    return matchesName && matchesField;
+  });
 
   const totalPages = Math.ceil(filteredStudents.length / studentsPerPage);
   const startIndex = (currentPage - 1) * studentsPerPage;
@@ -52,8 +80,36 @@ export default function StudentsSection() {
 
   return (
     <div>
-      {/* Search */}
+      {/* Filter and Search */}
       <div className="mb-4 sm:mb-6 md:mb-8 flex flex-col sm:flex-row gap-2 sm:gap-4">
+        <Select value={fieldFilter} onValueChange={setFieldFilter}>
+          <SelectTrigger
+            className={`w-full sm:w-56 text-sm sm:text-base rounded-md shadow-sm transition-colors
+              ${
+                isDark
+                  ? "bg-gray-800/70 border-gray-600/50 text-blue-200"
+                  : "bg-white/70 border-gray-200/50 text-blue-700"
+              }
+              backdrop-blur-sm focus:ring-2 focus:ring-blue-400 focus:border-blue-400`}
+          >
+            <SelectValue placeholder="All Fields" />
+          </SelectTrigger>
+          <SelectContent
+            className={`rounded-md shadow-lg mt-1
+              ${
+                isDark
+                  ? "bg-gray-800 text-blue-200 border-gray-700"
+                  : "bg-white text-blue-700 border-gray-200"
+              }`}
+          >
+            <SelectItem value="all">All Fields</SelectItem>
+            {uniqueFields.map((field) => (
+              <SelectItem key={field} value={field}>
+                {field}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
         <div className="relative flex-1">
           <Search
             className={`absolute left-2 sm:left-3 top-1/2 transform -translate-y-1/2 ${
@@ -132,8 +188,16 @@ export default function StudentsSection() {
                       width={420}
                       height={420}
                       className="rounded-lg sm:rounded-xl md:rounded-2xl shadow-xl object-contain w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[420px] lg:h-[420px] border-2 sm:border-4 border-white dark:border-gray-700 bg-white dark:bg-gray-900"
-                      onClick={() => setSelectedStudent(student)}
-                      style={{ cursor: "pointer" }}
+                      onClick={() => {
+                        if (student.image_urls.length > 0) {
+                          setFullscreenImages(student.image_urls);
+                          setFullscreenStartIndex(0);
+                        }
+                      }}
+                      style={{
+                        cursor:
+                          student.image_urls.length > 0 ? "pointer" : "default",
+                      }}
                     />
                   </div>
                   {/* Details Side */}
@@ -188,8 +252,21 @@ export default function StudentsSection() {
                 {t.previous}
               </Button>
               <div className="flex gap-1 sm:gap-2">
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map(
-                  (page) => (
+                {(() => {
+                  const windowSize = 10;
+                  let start = Math.max(
+                    1,
+                    currentPage - Math.floor(windowSize / 2)
+                  );
+                  let end = start + windowSize - 1;
+                  if (end > totalPages) {
+                    end = totalPages;
+                    start = Math.max(1, end - windowSize + 1);
+                  }
+                  return Array.from(
+                    { length: end - start + 1 },
+                    (_, i) => start + i
+                  ).map((page) => (
                     <Button
                       key={page}
                       variant={currentPage === page ? "default" : "outline"}
@@ -206,8 +283,8 @@ export default function StudentsSection() {
                     >
                       {page}
                     </Button>
-                  )
-                )}
+                  ));
+                })()}
               </div>
               <Button
                 variant="outline"
@@ -229,12 +306,38 @@ export default function StudentsSection() {
         </div>
       </div>
 
-      {/* Student Modal */}
-      {selectedStudent && (
-        <StudentModal
-          student={selectedStudent}
-          onClose={() => setSelectedStudent(null)}
-        />
+      {/* Fullscreen Image Dialog */}
+      {fullscreenImages && (
+        <Dialog
+          open={!!fullscreenImages}
+          onOpenChange={() => setFullscreenImages(null)}
+        >
+          <DialogContent className="!max-w-full !w-screen !h-screen !p-0 !grid-cols-1 flex items-center justify-center bg-black/90">
+            <DialogTitle className="sr-only">Student Image Gallery</DialogTitle>
+            <div className="w-full h-full flex items-center justify-center relative">
+              <Carousel opts={{ startIndex: fullscreenStartIndex }}>
+                <CarouselContent>
+                  {fullscreenImages.map((img, idx) => (
+                    <CarouselItem
+                      key={idx}
+                      className="flex items-center justify-center w-full h-full"
+                    >
+                      <Image
+                        src={img || "/placeholder.svg"}
+                        alt={`Student Image ${idx + 1}`}
+                        width={1600}
+                        height={1200}
+                        className="object-contain w-full h-full max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl"
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                {fullscreenImages.length > 1 && <CarouselPrevious />}
+                {fullscreenImages.length > 1 && <CarouselNext />}
+              </Carousel>
+            </div>
+          </DialogContent>
+        </Dialog>
       )}
     </div>
   );
