@@ -3,12 +3,12 @@ export const studentsData = [
     name: "Abenezer Merdekios",
     quote: "ኦሪት ዘዳግም 32 v 12 ፤ እግዚአብሔር ብቻውን መራው፤ ከእርሱም ጋር ሌላ አምላክ አልነበረም።",
     image_urls: [
-      "https://drive.google.com/uc?export=view&id=12J9lQ4Yw71ftGygp_tQ_JDHLQ4i6qXEQ"
+      "https://drive.google.com/uc?export=view&id=12J9lQ4Yw71ftGygp_tQ_JDHLQ4i6qXEQ",
     ],
     video_urls: [
-      "https://drive.google.com/uc?export=view&id=1Cg2SUue4C_2fmdn2D7CD6hlJLVLuoLzM"
+      "https://drive.google.com/uc?export=view&id=1Cg2SUue4C_2fmdn2D7CD6hlJLVLuoLzM",
     ],
-    fieldOfStudy: "Software Engineering"
+    fieldOfStudy: "Software Engineering",
   },
   {
     name: "Amanuel Mandefrow",
@@ -273,49 +273,51 @@ export const studentsData = [
   {
     name: "Barkot Muhaba",
     quote: "Short circuits challenged me but sparked a quick reboot to come.",
-    image_urls: [],  // Local images will need to be handled separately
+    image_urls: [], // Local images will need to be handled separately
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
   {
     name: "Beamlak Tesfaye",
     quote: "Psalms 23",
-    image_urls: [],  // Local images will need to be handled separately
+    image_urls: [], // Local images will need to be handled separately
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
   {
     name: "Bilisuma Befikadu",
     quote: "How can I repay the Lord for all his goodness to me? Ps 116፥12",
-    image_urls: [],  // Local images will need to be handled separately
+    image_urls: [], // Local images will need to be handled separately
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
   {
     name: "Ephrata Zerfu",
     quote: "ታላቅ ድንቅ አምላክ ከኔ ጋራ ነበር፤ ነውም፤ ይሆንማል!!!",
-    image_urls: [],  // Local images will need to be handled separately
+    image_urls: [], // Local images will need to be handled separately
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
   {
     name: "Eyasu Iticha Dangiya",
-    quote: "The fear of man bringeth a snare: but whoso putteth his trust in the LORD shall be safe. Proverbs 29:25",
-    image_urls: [],  // Local images will need to be handled separately
+    quote:
+      "The fear of man bringeth a snare: but whoso putteth his trust in the LORD shall be safe. Proverbs 29:25",
+    image_urls: [], // Local images will need to be handled separately
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
   {
     name: "Getu Bekele",
-    quote: "\"In all your ways ACKNOWLEDGE HIM, And He shall DIRECT YOUR PATHS.\" Proverbs 3÷6",
-    image_urls: [],  // Local images will need to be handled separately
+    quote:
+      '"In all your ways ACKNOWLEDGE HIM, And He shall DIRECT YOUR PATHS." Proverbs 3÷6',
+    image_urls: [], // Local images will need to be handled separately
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
   {
     name: "Natnael Defaru",
-    quote: "\"Yet I will rejoice in the LORD\" Habakkuk 3:18",
-    image_urls: [],  // Local images will need to be handled separately
+    quote: '"Yet I will rejoice in the LORD" Habakkuk 3:18',
+    image_urls: [], // Local images will need to be handled separately
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
@@ -334,18 +336,19 @@ export const studentsData = [
       "https://drive.google.com/uc?export=view&id=1JtF1zb_sEOULx0EzOgmAsoo3_jweS4OR",
       "https://drive.google.com/uc?export=view&id=1pwxFT9bP8PMVtSsF5rUTEsdr7fcq56F3",
       "https://drive.google.com/uc?export=view&id=1JiRXe6lHD1v4OT41CEAvmKJukgGE1Lqj",
-      "https://drive.google.com/uc?export=view&id=1BQ0lq2EJqmIYEesSUisBVWprMryakZLS"
+      "https://drive.google.com/uc?export=view&id=1BQ0lq2EJqmIYEesSUisBVWprMryakZLS",
     ],
     video_urls: [],
     fieldOfStudy: "Architecture",
   },
   {
     name: "Ameha Mulugeta",
-    quote: "እርሱ ሊልቅ እኔ ግን ላንስ ያስፈልጋል።— ዮሐንስ 3፥30 Every single step forward was truly a testament to a strength far greater than my own.",
+    quote:
+      "እርሱ ሊልቅ እኔ ግን ላንስ ያስፈልጋል።— ዮሐንስ 3፥30 Every single step forward was truly a testament to a strength far greater than my own.",
     image_urls: [
       "https://drive.google.com/uc?export=view&id=12pzXsnw5YLi1ln0VUCQLaf6G6Jcv20t6",
       "https://drive.google.com/uc?export=view&id=1AiCBYZjG_qiRl8eNRSyx2Jtuo_a-7Yw5",
-      "https://drive.google.com/uc?export=view&id=122xx_v9WiWmJ7eXqxaEYyE8JMxicQDAM"
+      "https://drive.google.com/uc?export=view&id=122xx_v9WiWmJ7eXqxaEYyE8JMxicQDAM",
     ],
     video_urls: [],
     fieldOfStudy: "Architecture",
@@ -356,7 +359,7 @@ export const studentsData = [
     image_urls: [
       "https://drive.google.com/uc?export=view&id=1EERyhlPunb5QEODI7kCfF4W_00vC6GSt",
       "https://drive.google.com/uc?export=view&id=1Pi8IYu4X2jjW800FoF7ixXl1870iouFs",
-      "https://drive.google.com/uc?export=view&id=1_OPycTa0h8MtG4x3GgVwMSKiCnyKa6TS"
+      "https://drive.google.com/uc?export=view&id=1_OPycTa0h8MtG4x3GgVwMSKiCnyKa6TS",
     ],
     video_urls: [],
     fieldOfStudy: "Architecture",
@@ -368,7 +371,7 @@ export const studentsData = [
       "https://drive.google.com/uc?export=view&id=10x6DxInWGD-Fn_OjB77M85QblIfBwiw3",
       "https://drive.google.com/uc?export=view&id=190HuGgrq9evND8QtzKMkwBrVThHbkRzH",
       "https://drive.google.com/uc?export=view&id=1g_tOahkU_McN1fSfsEUYyIAslqpLiS31",
-      "https://drive.google.com/uc?export=view&id=1S_DohzCvV3w7FRVySof6x1uutkfuBZXU"
+      "https://drive.google.com/uc?export=view&id=1S_DohzCvV3w7FRVySof6x1uutkfuBZXU",
     ],
     video_urls: [],
     fieldOfStudy: "Architecture",
@@ -386,28 +389,29 @@ export const studentsData = [
     image_urls: [
       "https://drive.google.com/uc?export=view&id=1_SZiwb_Cerh0njCXdnaehknD_EfxpSQ9",
       "https://drive.google.com/uc?export=view&id=1-dXUm7rdzv0UwrzMP5fhNsf_WWYEvNBV",
-      "https://drive.google.com/uc?export=view&id=1Qk9zGIvsXI6VfBi0hAq3155ezN_NvClT"
+      "https://drive.google.com/uc?export=view&id=1Qk9zGIvsXI6VfBi0hAq3155ezN_NvClT",
     ],
     video_urls: [],
     fieldOfStudy: "Architecture",
   },
   {
     name: "Amanuel Meles G/Tsadik",
-    quote: "\" ይህች ከእግዚአብሔር ዘንድ ሆነች፥ ለዓይናችንም ድንቅ ናት። \" መዝሙር 118 :23",
+    quote: '" ይህች ከእግዚአብሔር ዘንድ ሆነች፥ ለዓይናችንም ድንቅ ናት። " መዝሙር 118 :23',
     image_urls: [
       "https://drive.google.com/uc?export=view&id=1POShKfhYlyKeO_npMguMpXG-x5qUactW",
-      "https://drive.google.com/uc?export=view&id=1x_WfsL8toE8lIBG60HraJgcrbY0oEI05"
+      "https://drive.google.com/uc?export=view&id=1x_WfsL8toE8lIBG60HraJgcrbY0oEI05",
     ],
     video_urls: [],
     fieldOfStudy: "Architecture",
   },
   {
     name: "Desta Fute Guraro",
-    quote: "NOT BECAUSE OF WHAT I'VE DONE, BUT BECAUSE OF WHO YOU ARE ... GOD YOU'RE FAITHFUL!",
+    quote:
+      "NOT BECAUSE OF WHAT I'VE DONE, BUT BECAUSE OF WHO YOU ARE ... GOD YOU'RE FAITHFUL!",
     image_urls: [
       "https://drive.google.com/uc?export=view&id=1_hD_FGvyraBYUEaz33U06RwR5NDUyQmv",
       "https://drive.google.com/uc?export=view&id=1UPtnFVuOtzQ-Co1djet6K1ziCsAXvXvP",
-      "https://drive.google.com/uc?export=view&id=1dQq_K_mvWOmfWeuLkDlIZ7XykNmANpyb"
+      "https://drive.google.com/uc?export=view&id=1dQq_K_mvWOmfWeuLkDlIZ7XykNmANpyb",
     ],
     video_urls: [],
     fieldOfStudy: "Architecture",
@@ -420,7 +424,7 @@ export const studentsData = [
       "https://drive.google.com/uc?export=view&id=1k17ujGIpQN-Dw00H51MSKTPEQd9QdhnN",
       "https://drive.google.com/uc?export=view&id=1ilZNrkVtHSMaJuHLpfZWI-kydx4Ji83V",
       "https://drive.google.com/uc?export=view&id=1fDiCiwVnBjsflsrzgXYlt6vohi_VS0QJ",
-      "https://drive.google.com/uc?export=view&id=1prETpdCZG93veIyeYvyjxWVqpd9IBc18"
+      "https://drive.google.com/uc?export=view&id=1prETpdCZG93veIyeYvyjxWVqpd9IBc18",
     ],
     video_urls: [],
     fieldOfStudy: "Architecture",
@@ -430,7 +434,7 @@ export const studentsData = [
     quote: "It's been God since day one.",
     image_urls: [
       "https://drive.google.com/uc?export=view&id=1vwDgHvh4E7O8Wr5Ruln767DsRReppbGy",
-      "https://drive.google.com/uc?export=view&id=1y8YGqmDKvc3Ie1OJz7x1RatxCdi2HVV5"
+      "https://drive.google.com/uc?export=view&id=1y8YGqmDKvc3Ie1OJz7x1RatxCdi2HVV5",
     ],
     video_urls: [],
     fieldOfStudy: "Architecture",
@@ -440,7 +444,7 @@ export const studentsData = [
     quote: "Rod and staff comfort through the valley",
     image_urls: [
       "https://drive.google.com/uc?export=view&id=1rImvmdaGD8A6Ser0AwrWMLYxsn-h93hZ",
-      "https://drive.google.com/uc?export=view&id=1zFNIqFsHEYK5uSbCB6Speqz8rSDh8ml6"
+      "https://drive.google.com/uc?export=view&id=1zFNIqFsHEYK5uSbCB6Speqz8rSDh8ml6",
     ],
     video_urls: [],
     fieldOfStudy: "Architecture",
@@ -450,14 +454,15 @@ export const studentsData = [
     quote: "The lord works in mysterious ways",
     image_urls: [
       "https://drive.google.com/uc?export=view&id=1Rxri7WmhSk2ojfYCKCdf4gMO07LYtpxe",
-      "https://drive.google.com/uc?export=view&id=1JDnbMKg29DchnnfpsMJSaiGvw15xHlpx"
+      "https://drive.google.com/uc?export=view&id=1JDnbMKg29DchnnfpsMJSaiGvw15xHlpx",
     ],
     video_urls: [],
     fieldOfStudy: "Mining Engineering",
   },
   {
     name: "Immanuel Samson",
-    quote: "እግዚአብሔር ከእርሱ ጋር ነበረና፤ የሚያደርገውንም ሁሉ እግዚአብሔር ያቀናለት ነበር። — ዘፍጥረት 39፥23",
+    quote:
+      "እግዚአብሔር ከእርሱ ጋር ነበረና፤ የሚያደርገውንም ሁሉ እግዚአብሔር ያቀናለት ነበር። — ዘፍጥረት 39፥23",
     image_urls: [],
     video_urls: [],
     fieldOfStudy: "Mining Engineering",
@@ -488,6 +493,6 @@ export const studentsData = [
     quote: "ጌታእኮ ነው",
     image_urls: [],
     video_urls: [],
-    fieldOfStudy: "Mining Engineering"
-  }
+    fieldOfStudy: "Mining Engineering",
+  },
 ];
