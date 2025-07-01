@@ -55,29 +55,29 @@ export default function Navigation({
                 variant="outline"
                 size="sm"
                 onClick={toggleTheme}
-                className={`h-7 w-7 sm:h-8 sm:w-8 md:h-9 md:w-9 ${
+                className={`h-7 w-7 sm:h-8 sm:w-8 md:h-9 md:w-9 overflow-hidden flex items-center justify-center p-0 ${
                   isDark
                     ? "bg-gray-800 border-gray-600"
                     : "bg-white/80 backdrop-blur-sm"
                 }`}
               >
                 {isDark ? (
-                  <Sun className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <Sun className="w-4 h-4 sm:w-5 sm:h-5 object-contain shrink-0" />
                 ) : (
-                  <Moon className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <Moon className="w-4 h-4 sm:w-5 sm:h-5 object-contain shrink-0" />
                 )}
               </Button>
               <Button
                 variant="outline"
                 size="sm"
                 onClick={toggleLanguage}
-                className={`h-7 w-7 sm:h-8 sm:w-8 md:h-9 md:w-9 ${
+                className={`h-7 w-7 sm:h-8 sm:w-8 md:h-9 md:w-9 overflow-hidden flex items-center justify-center p-0 ${
                   isDark
                     ? "bg-gray-800 border-gray-600"
                     : "bg-white/80 backdrop-blur-sm"
                 }`}
               >
-                <Globe className="w-3 h-3 sm:w-4 sm:h-4 mr-0 sm:mr-1" />
+                <Globe className="w-4 h-4 sm:w-5 sm:h-5 object-contain shrink-0 mr-0 sm:mr-1" />
                 <span className="hidden sm:inline">
                   {language === "en" ? "አማ" : "EN"}
                 </span>
@@ -86,7 +86,7 @@ export default function Navigation({
             <div className="flex items-center gap-2 sm:gap-4 md:gap-6">
               <button
                 onClick={() => setCurrentSection("book")}
-                className={`px-2 sm:px-3 md:px-4 py-1 sm:py-2 rounded-lg transition-colors text-xs sm:text-sm md:text-base ${
+                className={`px-2 sm:px-3 md:px-4 py-1 sm:py-2 rounded-lg transition-colors text-xs sm:text-sm md:text-base flex items-center overflow-hidden ${
                   currentSection === "book"
                     ? `${
                         isDark
@@ -100,12 +100,12 @@ export default function Navigation({
                       }`
                 }`}
               >
-                <Users className="w-3 h-3 sm:w-4 sm:h-4 inline mr-1 sm:mr-2" />
+                <Users className="w-4 h-4 sm:w-5 sm:h-5 object-contain shrink-0 inline mr-1 sm:mr-2" />
                 <span className="hidden sm:inline">{t.students}</span>
               </button>
               <button
                 onClick={() => setCurrentSection("journey")}
-                className={`px-2 sm:px-3 md:px-4 py-1 sm:py-2 rounded-lg transition-colors text-xs sm:text-sm md:text-base ${
+                className={`px-2 sm:px-3 md:px-4 py-1 sm:py-2 rounded-lg transition-colors text-xs sm:text-sm md:text-base flex items-center overflow-hidden ${
                   currentSection === "journey"
                     ? `${
                         isDark
@@ -119,12 +119,12 @@ export default function Navigation({
                       }`
                 }`}
               >
-                <Calendar className="w-3 h-3 sm:w-4 sm:h-4 inline mr-1 sm:mr-2" />
+                <Calendar className="w-4 h-4 sm:w-5 sm:h-5 object-contain shrink-0 inline mr-1 sm:mr-2" />
                 <span className="hidden sm:inline">{t.journey}</span>
               </button>
               <button
                 onClick={() => setCurrentSection("prayers")}
-                className={`px-2 sm:px-3 md:px-4 py-1 sm:py-2 rounded-lg transition-colors text-xs sm:text-sm md:text-base ${
+                className={`px-2 sm:px-3 md:px-4 py-1 sm:py-2 rounded-lg transition-colors text-xs sm:text-sm md:text-base flex items-center overflow-hidden ${
                   currentSection === "prayers"
                     ? `${
                         isDark
@@ -138,7 +138,7 @@ export default function Navigation({
                       }`
                 }`}
               >
-                <MessageCircle className="w-3 h-3 sm:w-4 sm:h-4 inline mr-1 sm:mr-2" />
+                <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 object-contain shrink-0 inline mr-1 sm:mr-2" />
                 <span className="hidden sm:inline">{t.prayers}</span>
               </button>
             </div>

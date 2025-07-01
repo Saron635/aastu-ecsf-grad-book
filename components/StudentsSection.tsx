@@ -237,70 +237,79 @@ export default function StudentsSection() {
 
           {/* Pagination */}
           {totalPages > 1 && (
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
-              <Button
-                variant="outline"
-                onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
-                disabled={currentPage === 1}
-                className={`text-xs sm:text-sm ${
-                  isDark
-                    ? "bg-gray-700/70 border-gray-600"
-                    : "bg-white/70 border-gray-200"
-                } backdrop-blur-sm`}
-              >
-                <ChevronLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
-                {t.previous}
-              </Button>
-              <div className="flex gap-1 sm:gap-2">
-                {(() => {
-                  const windowSize = 10;
-                  let start = Math.max(
-                    1,
-                    currentPage - Math.floor(windowSize / 2)
-                  );
-                  let end = start + windowSize - 1;
-                  if (end > totalPages) {
-                    end = totalPages;
-                    start = Math.max(1, end - windowSize + 1);
-                  }
-                  return Array.from(
-                    { length: end - start + 1 },
-                    (_, i) => start + i
-                  ).map((page) => (
-                    <Button
-                      key={page}
-                      variant={currentPage === page ? "default" : "outline"}
-                      onClick={() => handlePageChange(page)}
-                      className={`text-xs sm:text-sm ${
-                        currentPage === page
-                          ? "bg-blue-500 hover:bg-blue-600"
-                          : `${
-                              isDark
-                                ? "bg-gray-700/70 border-gray-600"
-                                : "bg-white/70 border-gray-200"
-                            } backdrop-blur-sm`
-                      }`}
-                    >
-                      {page}
-                    </Button>
-                  ));
-                })()}
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 w-full">
+              <div className="w-full overflow-x-auto custom-scrollbar">
+                <div className="flex flex-row justify-center items-center gap-1 sm:gap-2 min-w-[240px] w-max mx-auto px-1">
+                  <Button
+                    variant="outline"
+                    onClick={() =>
+                      handlePageChange(Math.max(1, currentPage - 1))
+                    }
+                    disabled={currentPage === 1}
+                    className={`text-xs sm:text-sm px-2 sm:px-3 ${
+                      isDark
+                        ? "bg-gray-700/70 border-gray-600"
+                        : "bg-white/70 border-gray-200"
+                    } backdrop-blur-sm`}
+                  >
+                    <ChevronLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
+                    {t.previous}
+                  </Button>
+                  <div className="flex gap-1 sm:gap-2">
+                    {(() => {
+                      const windowSize =
+                        typeof window !== "undefined" && window.innerWidth < 640
+                          ? 3
+                          : 5;
+                      let start = Math.max(
+                        1,
+                        currentPage - Math.floor(windowSize / 2)
+                      );
+                      let end = start + windowSize - 1;
+                      if (end > totalPages) {
+                        end = totalPages;
+                        start = Math.max(1, end - windowSize + 1);
+                      }
+                      return Array.from(
+                        { length: end - start + 1 },
+                        (_, i) => start + i
+                      ).map((page) => (
+                        <Button
+                          key={page}
+                          variant={currentPage === page ? "default" : "outline"}
+                          onClick={() => handlePageChange(page)}
+                          className={`text-xs sm:text-sm px-2 sm:px-3 min-w-[32px] ${
+                            currentPage === page
+                              ? "bg-blue-500 hover:bg-blue-600"
+                              : `${
+                                  isDark
+                                    ? "bg-gray-700/70 border-gray-600"
+                                    : "bg-white/70 border-gray-200"
+                                } backdrop-blur-sm`
+                          }`}
+                        >
+                          {page}
+                        </Button>
+                      ));
+                    })()}
+                  </div>
+                  <Button
+                    variant="outline"
+                    onClick={() =>
+                      handlePageChange(Math.min(totalPages, currentPage + 1))
+                    }
+                    disabled={currentPage === totalPages}
+                    className={`text-xs sm:text-sm px-2 sm:px-3 ${
+                      isDark
+                        ? "bg-gray-700/70 border-gray-600"
+                        : "bg-white/70 border-gray-200"
+                    } backdrop-blur-sm`}
+                  >
+                    {t.next}
+                    <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2" />
+                  </Button>
+                </div>
               </div>
-              <Button
-                variant="outline"
-                onClick={() =>
-                  handlePageChange(Math.min(totalPages, currentPage + 1))
-                }
-                disabled={currentPage === totalPages}
-                className={`text-xs sm:text-sm ${
-                  isDark
-                    ? "bg-gray-700/70 border-gray-600"
-                    : "bg-white/70 border-gray-200"
-                } backdrop-blur-sm`}
-              >
-                {t.next}
-                <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2" />
-              </Button>
             </div>
           )}
         </div>
