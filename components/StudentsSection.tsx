@@ -125,7 +125,10 @@ export default function StudentsSection() {
           <Input
             placeholder={t.searchStudents}
             value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
+            onChange={(e) => {
+              setSearchTerm(e.target.value);
+              setCurrentPage(1);
+            }}
             className={`pl-6 sm:pl-10 text-sm sm:text-base ${
               isDark
                 ? "bg-gray-800/70 border-gray-600/50"
