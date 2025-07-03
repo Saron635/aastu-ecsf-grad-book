@@ -329,7 +329,7 @@ export const studentsData = [
     fieldOfStudy: "Civil Engineering",
   },
   {
-    name: "Martha Shewaferaw",
+    name: "Martha",
     quote: "",
     image_urls: [
       "https://drive.google.com/uc?export=view&id=1QMRYlj9zM-7r_yg4P-XXuO96-OGBqRai",
@@ -559,7 +559,7 @@ export const studentsData = [
     fieldOfStudy: "Architecture",
   },
   {
-    name: "Dejene Daiel",
+    name: "Dejene Daniel",
     quote: "",
     image_urls: [
       "https://drive.google.com/uc?export=view&id=1GMtqnQdAAmIGPwKG1mdDZr1ZPTUHMWhA",
