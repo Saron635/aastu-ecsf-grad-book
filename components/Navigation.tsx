@@ -49,7 +49,7 @@ export default function Navigation({
               {t.subtitle}
             </h1>
           </div>
-          <div className="flex items-center gap-2 sm:gap-4">
+          <div className="flex flex-wrap-reverse items-center gap-2 sm:gap-4">
             <div className="flex gap-1 sm:gap-2">
               <Button
                 variant="outline"
@@ -71,7 +71,7 @@ export default function Navigation({
                 variant="outline"
                 size="sm"
                 onClick={toggleLanguage}
-                className={`h-7 w-7 sm:h-8 sm:w-8 md:h-9 md:w-9 overflow-hidden flex items-center justify-center p-0 ${
+                className={`h-7 w-7 sm:h-8  md:h-9 sm:w-fit sm:px-2 overflow-hidden flex items-center justify-center p-0 ${
                   isDark
                     ? "bg-gray-800 border-gray-600"
                     : "bg-white/80 backdrop-blur-sm"
