@@ -72,14 +72,20 @@ export default function PrayerWallSection() {
         <div className="text-center text-gray-500">Loading...</div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 md:gap-4">
-          {prayerMessages.map((prayer: PrayerMessage) => (
-            <PrayerCard
-              key={prayer.id}
-              prayer={prayer}
-              isDark={isDark}
-              onLike={likePrayer}
-            />
-          ))}
+          {prayerMessages.length <= 0 ? (
+            <div className="text-center text-gray-500">
+              No Prayer Found, Check your internet
+            </div>
+          ) : (
+            prayerMessages.map((prayer: PrayerMessage) => (
+              <PrayerCard
+                key={prayer.id}
+                prayer={prayer}
+                isDark={isDark}
+                onLike={likePrayer}
+              />
+            ))
+          )}
         </div>
       )}
     </div>

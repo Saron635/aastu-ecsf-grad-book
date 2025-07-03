@@ -53,7 +53,7 @@ export function PrayerCard({
               isDark ? "text-gray-300" : "text-gray-600"
             }`}
           >
-            — {name}
+            — {name === "" ? "Anonymous": name}
           </p>
           <button
             onClick={() => onLike(id)}

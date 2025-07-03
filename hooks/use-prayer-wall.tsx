@@ -60,27 +60,43 @@ function usePrayerWall() {
       }
     }
   };
-
   const likePrayer = async (row_id: number) => {
-    const { data: rpcData, error: rpcError } = await supabase.rpc(
-      "increment_likes",
-      {
-        row_id,
-      }
+    // Find the previous message state for rollback if needed
+    const previousMsg = prayerMessages.find((msg) => msg.id === row_id);
+
+    // Optimistically update UI
+    setPrayerMessages(
+      prayerMessages.map((msg) =>
+        msg.id === row_id ? { ...msg, likes: msg.likes + 1 } : msg
+      )
     );
+
+    // Call the increment_likes RPC
+    const { error: rpcError } = await supabase.rpc("increment_likes", {
+      row_id,
+    });
     if (rpcError) {
+      // Rollback UI if RPC fails
+      setPrayerMessages(
+        prayerMessages.map((msg) =>
+          msg.id === row_id && previousMsg ? previousMsg : msg
+        )
+      );
       console.error(rpcError);
       return;
     }
+
+    // Fetch the updated likes count from the database
     const { data, error } = await supabase
       .from("prayer_wall")
       .select("id, likes")
-      .eq("id", row_id);
-    if (!error && data && data[0]) {
+      .eq("id", row_id)
+      .single();
+
+    if (error && previousMsg) {
+      // Rollback UI if fetch fails
       setPrayerMessages(
-        prayerMessages.map((msg) =>
-          msg.id === row_id ? { ...msg, likes: data[0].likes } : msg
-        )
+        prayerMessages.map((msg) => (msg.id === row_id ? previousMsg : msg))
       );
     }
   };
