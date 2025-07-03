@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import { useTheme } from "@/contexts/ThemeContext";
+import { HtmlContext } from "next/dist/shared/lib/html-context.shared-runtime";
 
 interface StudentCardProps {
   student: any;

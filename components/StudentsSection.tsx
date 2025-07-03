@@ -82,7 +82,13 @@ export default function StudentsSection() {
     <div>
       {/* Filter and Search */}
       <div className="mb-4 sm:mb-6 md:mb-8 flex flex-col sm:flex-row gap-2 sm:gap-4">
-        <Select value={fieldFilter} onValueChange={setFieldFilter}>
+        <Select
+          value={fieldFilter}
+          onValueChange={(value) => {
+            setFieldFilter(value);
+            setCurrentPage(1);
+          }}
+        >
           <SelectTrigger
             className={`w-full sm:w-56 text-sm sm:text-base rounded-md shadow-sm transition-colors
               ${

@@ -86,19 +86,6 @@ function usePrayerWall() {
       return;
     }
 
-    // Fetch the updated likes count from the database
-    const { data, error } = await supabase
-      .from("prayer_wall")
-      .select("id, likes")
-      .eq("id", row_id)
-      .single();
-
-    if (error && previousMsg) {
-      // Rollback UI if fetch fails
-      setPrayerMessages(
-        prayerMessages.map((msg) => (msg.id === row_id ? previousMsg : msg))
-      );
-    }
   };
 
   return {
