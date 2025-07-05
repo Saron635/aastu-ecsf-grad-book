@@ -223,7 +223,7 @@ export const studentsData = [
     fieldOfStudy: "Software Engineering",
   },
   {
-    name: "Yohannes Assefa",
+    name: "Yordanos Yirgu",
     quote:
       "አስጀምሮ በድል ያስጨረሰን እግዚአብሔር ክብሩን ሁሉ እርሱ ውሰድ ። በቀሪዉ ዘመናችን እግዚአብሔር ይጠብቀን ።",
     image_urls: [
@@ -512,14 +512,14 @@ export const studentsData = [
   {
     name: "Yannet Solomon",
     quote: "Greatly Blessed. Highly Favored.",
-    image_urls: [],
+    image_urls: ["https://drive.google.com/uc?export=view&id=168OIa78Az-Kw5g2AoUyOgwhMFme5YQnj"],
     video_urls: [],
     fieldOfStudy: "Architecture",
   },
   {
     name: "Feben Guret",
     quote: "Through it all, I was held.እግዚአብሄር ይመስገን!",
-    image_urls: [],
+    image_urls: ["https://drive.google.com/uc?export=view&id=1K4nb_dv-bEfZMBLrrIBgJHB1MqSjgov"],
     video_urls: [],
     fieldOfStudy: "Architecture",
   },
@@ -656,21 +656,45 @@ export const studentsData = [
     name: "Immanuel Samson",
     quote:
       "እግዚአብሔር ከእርሱ ጋር ነበረና፤ የሚያደርገውንም ሁሉ እግዚአብሔር ያቀናለት ነበር። — ዘፍጥረት 39፥23",
-    image_urls: [],
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1P88ps3DtGw4VwnixxLbws1xsYZGTYv-C",
+    ],
     video_urls: [],
     fieldOfStudy: "Mining Engineering",
   },
   {
     name: "Eyob Daniel",
     quote: "ነገር ሁሉ ለበጎ ነው",
-    image_urls: [],
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1Geme92cXRfG4EjcG7A_D-smsadiRiCAL",
+    ],
     video_urls: [],
     fieldOfStudy: "Mining Engineering",
   },
   {
     name: "Bereket Bula",
     quote: "ጌታእኮ ነው",
-    image_urls: [],
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1fdVfVSIhsDHWGJPAVFgVVlb-9Wdat7Ar",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Mining Engineering",
+  },
+  {
+    name: "Moges Zeleke",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1fdVfVSIhsDHWGJPAVFgVVlb-9Wdat7Ar",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Mining Engineering",
+  },
+  {
+    name: "Halleluya Zelalem",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1Nr-EAgDrJ7KGfCcdItBUb0WdWLhhtfaj",
+    ],
     video_urls: [],
     fieldOfStudy: "Mining Engineering",
   },
