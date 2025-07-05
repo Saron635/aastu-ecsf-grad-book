@@ -519,7 +519,8 @@ export const studentsData = [
   {
     name: "Feben Guret",
     quote: "Through it all, I was held.እግዚአብሄር ይመስገን!",
-    image_urls: ["https://drive.google.com/uc?export=view&id=1K4nb_dv-bEfZMBLrrIBgJHB1MqSjgov"],
+    image_urls: ["https://drive.google.com/uc?export=view&id=1K4nb_dv-bEfZMBLrrIBgJHB1MqSjgovP"
+    ],
     video_urls: [],
     fieldOfStudy: "Architecture",
   },
