@@ -7,11 +7,16 @@ import Image from "next/image";
 import { useTheme } from "@/contexts/ThemeContext";
 import { translations } from "@/data/translations";
 import { journeySteps } from "@/data/journeyData";
+import { useState } from "react";
+import JourneyImageModal from "./JourneyImageModal";
 
 export default function JourneySection() {
   const { isDark, language } = useTheme();
   const t = translations[language];
   const journey = journeySteps[language];
+
+  const [modalImages, setModalImages] = useState<string[] | null>(null);
+  const [fullscreenStartIndex, setFullscreenStartIndex] = useState(0);
 
   return (
     <div>
@@ -107,13 +112,22 @@ export default function JourneySection() {
                         ))}
                       </div>
                     </div>
-                    <div>
+                    <div className="relative group">
                       <Image
-                        src={step.image || "/placeholder.svg"}
-                        alt={step.title}
-                        width={300}
-                        height={200}
-                        className="rounded-lg w-full h-32 sm:h-40 md:h-48 object-cover shadow-md"
+                      src={step.images[0] || "/placeholder.svg"}
+                      alt={step.title}
+                      width={300}
+                      height={200}
+                      className="rounded-lg w-full h-32 sm:h-40 md:h-48 object-cover shadow-md cursor-pointer"
+                      onClick={() => {
+                        setModalImages(step.images);
+                        setFullscreenStartIndex(0);
+                      }}
+                      />
+                      <div className="absolute inset-0 rounded-lg pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      style={{
+                        background: "linear-gradient(to top, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0) 100%)"
+                      }}
                       />
                     </div>
                   </div>
@@ -123,6 +137,12 @@ export default function JourneySection() {
           </div>
         ))}
       </div>
+
+      <JourneyImageModal
+        setFullscreenImages={setModalImages}
+        fullscreenImages={modalImages}
+        fullscreenStartIndex={fullscreenStartIndex}
+      />
     </div>
   );
 }

@@ -42,7 +42,6 @@ export default function StudentsSection() {
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [isFlipping, setIsFlipping] = useState(false);
-  const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);
   const studentsPerPage = 2;
   const [fullscreenImages, setFullscreenImages] = useState<string[] | null>(
     null
@@ -232,11 +231,7 @@ export default function StudentsSection() {
                         isDark ? "text-blue-200" : "text-blue-700"
                       } ${language === "am" ? "text-right font-serif" : ""}`}
                     >
-                      {student.quote || (
-                        <span className="text-gray-400">
-                          No quote provided.
-                        </span>
-                      )}
+                      {student.quote || ""}
                     </blockquote>
                   </div>
                 </div>
