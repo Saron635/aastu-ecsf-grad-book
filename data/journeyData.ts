@@ -68,18 +68,6 @@ export const journeySteps = {
       ],
     },
     {
-      year: "2024",
-      title: "4t Year - Teams year ",
-      description:
-        "Focusing on our calling, completing capstone projects, and preparing to take our faith into our careers.",
-      images: [],
-      achievements: [
-        "Capstone Projects",
-        "Career Preparation",
-        "Ministry Planning",
-      ],
-    },
-    {
       year: "2025",
       title: "Gc Retreat",
       description:
@@ -117,14 +105,6 @@ export const journeySteps = {
         "የአመራር ሚናዎችን በመውሰድ፣ ዝግጅቶችን በማደራጀትና ወጣት ተማሪዎችን በእምነት ጉዞአቸው በመምራት።",
       images: halfLifeImages,
       achievements: ["የዝግጅት አደረጃጀት", "የአማካሪነት ፕሮግራሞች", "የአካዳሚክ ምርጥነት"],
-    },
-    {
-      year: "2024",
-      title: "አራተኛ ዓመት - ለአገልግሎት ዝግጅት",
-      description:
-        "በጥሪያችን ላይ በማተኮር፣ የመጨረሻ ፕሮጀክቶችን በማጠናቀቅና እምነታችንን ወደ ሙያችን ለመውሰድ በመዘጋጀት።",
-      images: [],
-      achievements: ["የመጨረሻ ፕሮጀክቶች", "የሙያ ዝግጅት", "የአገልግሎት እቅድ"],
     },
     {
       year: "2025",

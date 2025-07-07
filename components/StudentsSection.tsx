@@ -228,7 +228,9 @@ export default function StudentsSection() {
                         }}
                         style={{
                           cursor:
-                            student.image_urls.length > 0 ? "pointer" : "default",
+                            student.image_urls.length > 0
+                              ? "pointer"
+                              : "default",
                         }}
                       />
                     </div>
