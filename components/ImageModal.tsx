@@ -40,6 +40,11 @@ export default function ImageModal({
     }
   }, [api, fullscreenImages, fullscreenStartIndex]);
 
+  // Reset current index when images or start index changes
+  useEffect(() => {
+    setCurrent(fullscreenStartIndex || 0);
+  }, [fullscreenStartIndex, fullscreenImages]);
+
   // Always render the Dialog, control open state
   return (
     <Dialog
@@ -70,6 +75,8 @@ export default function ImageModal({
                   </CarouselItem>
                 ))}
               </CarouselContent>
+              {fullscreenImages.length > 1 && <CarouselPrevious />}
+              {fullscreenImages.length > 1 && <CarouselNext />}
               <div className="flex w-full  items-center justify-center gap-10 mt-3">
                 {Array.from({ length: count }).map((_, index) => (
                   <div
@@ -80,8 +87,6 @@ export default function ImageModal({
                   ></div>
                 ))}
               </div>
-              {fullscreenImages.length > 1 && <CarouselPrevious />}
-              {fullscreenImages.length > 1 && <CarouselNext />}
             </Carousel>
           )}
         </div>
