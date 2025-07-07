@@ -179,66 +179,90 @@ export default function StudentsSection() {
           </div>
 
           {/* Students Rows - 2 per page, each as a flex row */}
-          <div className="space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-12 mb-4 sm:mb-6 md:mb-8">
-            {currentStudents.map((student, idx) => {
-              const isEven = idx % 2 === 1;
-              return (
-                <div
-                  key={student.name + "-" + startIndex + "-" + idx}
-                  className={`flex flex-col lg:flex-row items-center lg:items-stretch bg-gradient-to-r from-blue-50/40 to-cyan-50/40 dark:from-gray-800/60 dark:to-gray-900/60 rounded-lg sm:rounded-xl shadow-lg overflow-hidden min-h-[280px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[420px] ${
-                    isEven ? "lg:flex-row-reverse" : ""
-                  }`}
-                >
-                  {/* Image Side */}
-                  <div className="flex-shrink-0 w-full lg:w-1/2 flex items-center justify-center p-3 sm:p-4 md:p-6 lg:p-8 bg-gradient-to-br from-blue-100/40 to-cyan-100/40 dark:from-gray-900/60 dark:to-gray-800/60">
-                    <Image
-                      src={student.image_urls[0] || "/placeholder.svg"}
-                      alt={student.name}
-                      width={420}
-                      height={420}
-                      className="rounded-lg sm:rounded-xl md:rounded-2xl shadow-xl object-contain w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[420px] lg:h-[420px] border-2 sm:border-4 border-white dark:border-gray-700 bg-white dark:bg-gray-900"
-                      onClick={() => {
-                        if (student.image_urls.length > 0) {
-                          setFullscreenImages(student.image_urls);
-                          setFullscreenStartIndex(0);
-                        }
-                      }}
-                      style={{
-                        cursor:
-                          student.image_urls.length > 0 ? "pointer" : "default",
-                      }}
-                    />
+          {filteredStudents.length === 0 ? (
+            <div className="flex flex-col items-center justify-center min-h-[300px] text-center text-blue-400 dark:text-blue-200 opacity-80">
+              <svg
+                width="48"
+                height="48"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="mx-auto mb-2 opacity-60"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M12 14c-3.314 0-6 1.343-6 3v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-1c0-1.657-2.686-3-6-3Zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+                />
+              </svg>
+              <p className="text-lg font-semibold mb-1">No students found.</p>
+              <p className="text-sm text-blue-300 dark:text-blue-100">
+                Try adjusting your search or filter criteria.
+              </p>
+            </div>
+          ) : (
+            <div className="space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-12 mb-4 sm:mb-6 md:mb-8">
+              {currentStudents.map((student, idx) => {
+                const isEven = idx % 2 === 1;
+                return (
+                  <div
+                    key={student.name + "-" + startIndex + "-" + idx}
+                    className={`flex flex-col lg:flex-row items-center lg:items-stretch bg-gradient-to-r from-blue-50/40 to-cyan-50/40 dark:from-gray-800/60 dark:to-gray-900/60 rounded-lg sm:rounded-xl shadow-lg overflow-hidden min-h-[280px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[420px] ${
+                      isEven ? "lg:flex-row-reverse" : ""
+                    }`}
+                  >
+                    {/* Image Side */}
+                    <div className="flex-shrink-0 w-full lg:w-1/2 flex items-center justify-center p-3 sm:p-4 md:p-6 lg:p-8 bg-gradient-to-br from-blue-100/40 to-cyan-100/40 dark:from-gray-900/60 dark:to-gray-800/60">
+                      <Image
+                        src={student.image_urls[0] || "/placeholder.svg"}
+                        alt={student.name}
+                        width={420}
+                        height={420}
+                        className="rounded-lg sm:rounded-xl md:rounded-2xl shadow-xl object-contain w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[420px] lg:h-[420px] border-2 sm:border-4 border-white dark:border-gray-700 bg-white dark:bg-gray-900"
+                        onClick={() => {
+                          if (student.image_urls.length > 0) {
+                            setFullscreenImages(student.image_urls);
+                            setFullscreenStartIndex(0);
+                          }
+                        }}
+                        style={{
+                          cursor:
+                            student.image_urls.length > 0 ? "pointer" : "default",
+                        }}
+                      />
+                    </div>
+                    {/* Details Side */}
+                    <div className="flex-1 flex flex-col justify-center p-3 sm:p-4 md:p-6 lg:p-8 xl:p-12">
+                      <h3
+                        className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold mb-2 sm:mb-3 md:mb-4 tracking-tight ${
+                          isDark ? "text-white" : "text-gray-800"
+                        } ${language === "am" ? "font-serif" : ""}`}
+                      >
+                        {student.name}
+                      </h3>
+                      <span
+                        className={`inline-block mb-2 sm:mb-3 md:mb-4 px-2 sm:px-3 md:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-sm ${
+                          isDark
+                            ? "bg-blue-900 text-blue-200"
+                            : "bg-blue-100 text-blue-700"
+                        }`}
+                      >
+                        {student.fieldOfStudy}
+                      </span>
+                      <blockquote
+                        className={`text-sm sm:text-base md:text-lg lg:text-xl italic font-medium leading-relaxed mb-2 ${
+                          isDark ? "text-blue-200" : "text-blue-700"
+                        } ${language === "am" ? "text-right font-serif" : ""}`}
+                      >
+                        {student.quote || ""}
+                      </blockquote>
+                    </div>
                   </div>
-                  {/* Details Side */}
-                  <div className="flex-1 flex flex-col justify-center p-3 sm:p-4 md:p-6 lg:p-8 xl:p-12">
-                    <h3
-                      className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold mb-2 sm:mb-3 md:mb-4 tracking-tight ${
-                        isDark ? "text-white" : "text-gray-800"
-                      } ${language === "am" ? "font-serif" : ""}`}
-                    >
-                      {student.name}
-                    </h3>
-                    <span
-                      className={`inline-block mb-2 sm:mb-3 md:mb-4 px-2 sm:px-3 md:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-sm ${
-                        isDark
-                          ? "bg-blue-900 text-blue-200"
-                          : "bg-blue-100 text-blue-700"
-                      }`}
-                    >
-                      {student.fieldOfStudy}
-                    </span>
-                    <blockquote
-                      className={`text-sm sm:text-base md:text-lg lg:text-xl italic font-medium leading-relaxed mb-2 ${
-                        isDark ? "text-blue-200" : "text-blue-700"
-                      } ${language === "am" ? "text-right font-serif" : ""}`}
-                    >
-                      {student.quote || ""}
-                    </blockquote>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+          )}
 
           {/* Pagination */}
           {totalPages > 1 && (
