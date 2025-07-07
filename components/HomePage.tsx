@@ -49,13 +49,13 @@ export default function HomePage({ onEnterBook }: HomePageProps) {
           variant="outline"
           size="sm"
           onClick={toggleLanguage}
-          className={`h-8 w-8 sm:h-9 sm:w-9 ${
+          className={`h-7 w-7 sm:h-8  md:h-9 sm:w-fit sm:px-2 overflow-hidden flex items-center justify-center p-0 ${
             isDark
               ? "bg-gray-800 border-gray-600"
               : "bg-white/80 backdrop-blur-sm"
           }`}
         >
-          <Globe className="w-3 h-3 sm:w-4 sm:h-4 mr-0 sm:mr-1" />
+          <Globe className="w-4 h-4 sm:w-5 sm:h-5 object-contain shrink-0 mr-0 sm:mr-1" />
           <span className="hidden sm:inline">
             {language === "en" ? "አማ" : "EN"}
           </span>
@@ -89,7 +89,7 @@ export default function HomePage({ onEnterBook }: HomePageProps) {
             alt="AASTU ECSF Logo"
             width={200}
             height={100}
-            className="mx-auto w-32 h-16 sm:w-40 sm:h-20 lg:w-48 lg:h-24 xl:w-56 xl:h-28"
+            // className="mx-auto w-32 h-16 sm:w-40 sm:h-20 lg:w-48 lg:h-24 xl:w-56 xl:h-28"
           />
           <div className="absolute inset-0 bg-blue-400/10 rounded-full blur-3xl"></div>
         </div>

@@ -294,7 +294,9 @@ export const studentsData = [
   {
     name: "Sofonias Zewedu",
     quote: `“ ኃይልን በሚሰጠኝ በክርስቶስ ሁሉን እችላለሁ። ” — ፊልጵስዩስ 4፥13`,
-    image_urls: [],
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1duzfjtJ3ftTsSxgWCrjuZxfuXvBRtGmW",
+    ],
     video_urls: [],
     fieldOfStudy: "Applied Science",
   },
@@ -330,7 +332,7 @@ export const studentsData = [
     fieldOfStudy: "Civil Engineering",
   },
   {
-    name: "Woldeab",
+    name: "Woldeab Asfaw",
     quote: "",
     image_urls: [
       "https://drive.google.com/uc?export=view&id=1Wzfc5liit0XhDmKCQftFMmLeE0_ny8Tc",
@@ -499,6 +501,15 @@ export const studentsData = [
     ],
     video_urls: [],
     fieldOfStudy: "ElectroMechanical Engineering",
+  },
+  {
+    name: "Shalom",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1LCsx24j_Ncwc2gQ21FwnIf3M6Cd4xnlE",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Environmental Engineering",
   },
   {
     name: "Amanuel kefyalew haile",
@@ -701,7 +712,7 @@ export const studentsData = [
     name: "Moges Zeleke",
     quote: "",
     image_urls: [
-      "https://drive.google.com/uc?export=view&id=1fdVfVSIhsDHWGJPAVFgVVlb-9Wdat7Ar",
+      "https://drive.google.com/uc?export=view&id=1PqSVZe1JCwiMGbuS7N4HTT5xNHik7FDN",
     ],
     video_urls: [],
     fieldOfStudy: "Mining Engineering",

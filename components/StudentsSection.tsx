@@ -24,6 +24,7 @@ import {
   SelectItem,
   SelectValue,
 } from "@/components/ui/select";
+import ImageModal from "./ImageModal";
 
 // Add Student type
 interface Student {
@@ -321,36 +322,11 @@ export default function StudentsSection() {
 
       {/* Fullscreen Image Dialog */}
       {fullscreenImages && (
-        <Dialog
-          open={!!fullscreenImages}
-          onOpenChange={() => setFullscreenImages(null)}
-        >
-          <DialogContent className="!max-w-full !w-screen !h-screen !p-0 !grid-cols-1 flex items-center justify-center bg-black/90">
-            <DialogTitle className="sr-only">Student Image Gallery</DialogTitle>
-            <div className="w-full h-full flex items-center justify-center relative">
-              <Carousel opts={{ startIndex: fullscreenStartIndex }}>
-                <CarouselContent>
-                  {fullscreenImages.map((img, idx) => (
-                    <CarouselItem
-                      key={idx}
-                      className="flex items-center justify-center w-full h-full"
-                    >
-                      <Image
-                        src={img || "/placeholder.svg"}
-                        alt={`Student Image ${idx + 1}`}
-                        width={1600}
-                        height={1200}
-                        className="object-contain w-full h-full max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl"
-                      />
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                {fullscreenImages.length > 1 && <CarouselPrevious />}
-                {fullscreenImages.length > 1 && <CarouselNext />}
-              </Carousel>
-            </div>
-          </DialogContent>
-        </Dialog>
+        <ImageModal
+          fullscreenImages={fullscreenImages}
+          setFullscreenImages={setFullscreenImages}
+          fullscreenStartIndex={fullscreenStartIndex}
+        />
       )}
     </div>
   );
