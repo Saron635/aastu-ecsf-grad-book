@@ -283,7 +283,7 @@ export const studentsData = [
     ],
     video_urls: [],
     fieldOfStudy: "Software Engineering",
-    role: "Department Committte"
+    role: "Department Committtee"
   },
 
 
@@ -832,7 +832,7 @@ export const studentsData = [
     ],
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
-    role: "Department Committte"
+    role: "Department Committtee"
     
   },
  
@@ -1271,7 +1271,7 @@ export const studentsData = [
     ],
     video_urls: [],
     fieldOfStudy: "Mechanical Engineering",
-    role: "Department Committte"
+    role: "Department Committtee"
   },
   
 
@@ -1396,7 +1396,7 @@ export const studentsData = [
     
     video_urls: [],
     fieldOfStudy: "Architecture",
-    role: "Department Committte"
+    role: "Department Committtee"
   },
  
   
