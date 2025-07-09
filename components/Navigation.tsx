@@ -5,6 +5,7 @@ import { Users, Calendar, MessageCircle, Sun, Moon, Globe } from "lucide-react";
 import Image from "next/image";
 import { useTheme } from "@/contexts/ThemeContext";
 import { translations } from "@/data/translations";
+import { ImageIcon } from "lucide-react";
 
 interface NavigationProps {
   currentSection: string;
@@ -122,6 +123,28 @@ export default function Navigation({
                 <Calendar className="w-4 h-4 sm:w-5 sm:h-5 object-contain shrink-0 inline mr-1 sm:mr-2" />
                 <span className="hidden sm:inline">{t.journey}</span>
               </button>
+              
+ 
+
+<button
+  onClick={() => setCurrentSection("memories")}
+  className={`px-2 sm:px-3 md:px-4 py-1 sm:py-2 rounded-lg transition-colors text-xs sm:text-sm md:text-base flex items-center overflow-hidden ${
+    currentSection === "memories"
+      ? `${
+          isDark
+            ? "bg-blue-900 text-blue-300"
+            : "bg-blue-100 text-blue-700"
+        }`
+      : `${
+          isDark
+            ? "text-gray-300 hover:text-blue-400"
+            : "text-gray-600 hover:text-blue-600"
+        }`
+  }`}
+>
+  <ImageIcon className="w-4 h-4 sm:w-5 sm:h-5 object-contain shrink-0 inline mr-1 sm:mr-2" />
+  <span className="hidden sm:inline">Memories</span>
+</button>
               <button
                 onClick={() => setCurrentSection("prayers")}
                 className={`px-2 sm:px-3 md:px-4 py-1 sm:py-2 rounded-lg transition-colors text-xs sm:text-sm md:text-base flex items-center overflow-hidden ${

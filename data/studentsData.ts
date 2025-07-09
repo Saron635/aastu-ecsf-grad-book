@@ -1,4 +1,8 @@
+import { RollerCoaster } from "lucide-react";
+
 export const studentsData = [
+
+  // Software
   {
     name: "Abenezer Merdekios",
     quote: "ኦሪት ዘዳግም 32 v 12 ፤ እግዚአብሔር ብቻውን መራው፤ ከእርሱም ጋር ሌላ አምላክ አልነበረም።",
@@ -132,7 +136,8 @@ export const studentsData = [
   {
     name: "Heyeman Abdisa",
     quote: "",
-    image_urls: [],
+    image_urls: ["https://drive.google.com/uc?export=view&id=1c_XPevdud5kPJ9tV9EAIBM3lxbKjisBc"],
+    
     video_urls: [],
     fieldOfStudy: "Software Engineering",
   },
@@ -149,7 +154,7 @@ export const studentsData = [
   {
     name: "Milki Siraj",
     quote: "",
-    image_urls: [],
+    image_urls: ["https://drive.google.com/uc?export=view&id=1iME_6EJ75FqCfH7tBV-no832HSZS56iX"],
     video_urls: [],
     fieldOfStudy: "Software Engineering",
   },
@@ -166,36 +171,42 @@ export const studentsData = [
     ],
     fieldOfStudy: "Software Engineering",
   },
+  
+    {
+    name: "Ruth Wossen",
+    quote:
+      "",
+    image_urls: [
+       "https://drive.google.com/uc?export=view&id=1KUigeqLHNL3OxJrvuUlpUKx61WiUFIFH"
+      ,
+    ],
+    video_urls: [
+      "",
+    ],
+    fieldOfStudy: "Software Engineering",
+  },
   {
     name: "Selihom Demeke",
     quote: '"በውድዋ ላይ ተደግፋ ከምድረ በዳ የምትወጣ ይህች ማን ናት?" መኃልየ መኃልይ 8:5',
     image_urls: [
-      "https://drive.google.com/uc?export=view&id=1UTbTzyjVnMbEtZdXkxdm8EhLFoti8aMl",
       "https://drive.google.com/uc?export=view&id=1DIdpdhZ5lzofSFxHysJQAOxi_ejxcJ21",
+      "https://drive.google.com/uc?export=view&id=1UTbTzyjVnMbEtZdXkxdm8EhLFoti8aMl",
       "https://drive.google.com/uc?export=view&id=17X9b4TDM51F2Ie-EJIvmE16qpTt1yLwj",
     ],
     video_urls: [],
     fieldOfStudy: "Software Engineering",
   },
+
   {
-    name: "Saron Aweke",
+    name: "Simeret Belete",
     quote:
-      "Taste and see that the Lord is good. Oh, the joys of those who take refuge in him! Psalms 34:8",
+      "",
     image_urls: [
-      "https://drive.google.com/uc?export=view&id=16g1mXYFB1FF_pM4X05NszGg-USZncUn4",
-    ],
-    video_urls: [],
-    fieldOfStudy: "Software Engineering",
-  },
-  {
-    name: "Tamirat Areda",
-    quote:
-      "በቃልህ የምትኖር አመላክ እዚህ አድርሰከኛልና ነገዬንም ላንተ ሰጠዉ, ምስጋና ጎሎብክ ሳይሆን ስለሚገባክ አመሰግንሀለዉ::",
-    image_urls: [
-      "https://drive.google.com/uc?export=view&id=1Lh2bgSgR7JYWsnhyAhy4iJGB8Hm1BWFl",
+      "https://drive.google.com/uc?export=view&id=1PmsxJZP8FJI002dDgKMImkObGeCE1Bh5"
+      
     ],
     video_urls: [
-      "https://drive.google.com/uc?export=view&id=1EqLuyDDXj9yUGsLxpdkika-F7PdJwfPG",
+  
     ],
     fieldOfStudy: "Software Engineering",
   },
@@ -212,6 +223,20 @@ export const studentsData = [
     ],
     fieldOfStudy: "Software Engineering",
   },
+    {
+    name: "Yosef Shimles",
+    quote:
+      "",
+    image_urls: [
+       "https://drive.google.com/uc?export=view&id=1qCAmR0TWf4f6kts9lf5Wth7NdGziYvLK"
+      
+    ],
+    video_urls: [
+  
+    ],
+    fieldOfStudy: "Software Engineering",
+  },
+
   {
     name: "Yordanos Seyoum",
     quote: "ልማድህ ነው ከፍ ማድረግ ከብረህ ምታከብር",
@@ -235,6 +260,35 @@ export const studentsData = [
     ],
     fieldOfStudy: "Software Engineering",
   },
+  {
+    name: "Tamirat Areda",
+    quote:
+      "በቃልህ የምትኖር አመላክ እዚህ አድርሰከኛልና ነገዬንም ላንተ ሰጠዉ, ምስጋና ጎሎብክ ሳይሆን ስለሚገባክ አመሰግንሀለዉ::",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1Lh2bgSgR7JYWsnhyAhy4iJGB8Hm1BWFl",
+    ],
+    video_urls: [
+      "https://drive.google.com/uc?export=view&id=1EqLuyDDXj9yUGsLxpdkika-F7PdJwfPG",
+    ],
+    fieldOfStudy: "Software Engineering",
+  },
+      
+
+{
+    name: "Saron Meseret",
+    quote:
+      "Taste and see that the Lord is good. Oh, the joys of those who take refuge in him! Psalms 34:8",
+    image_urls: [
+       "https://drive.google.com/uc?export=view&id=1SG472sCyTw1Z0KceayKczF9cSVlE3OAt",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Software Engineering",
+    role: "Department Committte"
+  },
+
+
+
+  // applied
   {
     name: "Biruk Tesfaye Bancha",
     quote: "እዬዬን በእሰየው፣እህህን በእልልታ፣ ለምኑን በአሜን ለለወጥከው እየሱስ እንካ ዘላለሜን",
@@ -267,6 +321,16 @@ export const studentsData = [
     video_urls: [],
     fieldOfStudy: "Applied Science",
   },
+    {
+    name: "Sophoniyas Zewdu",
+    quote: `“ ኃይልን በሚሰጠኝ በክርስቶስ ሁሉን እችላለሁ። ” — ፊልጵስዩስ 4፥13`,
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1lZTyVFR3OCTClZwNDKY47muO6ZxjUgyt"
+    ],
+    video_urls: [],
+    fieldOfStudy: "Applied Science",
+  
+  },
   {
     name: "Misgana Tarekegn Gebre",
     quote: "በማይለወጠዉ ፍቅርህ፣ የተቤዥሀቸዉ ህዝብህን ትመራለህ፣ ዘፀ15:13",
@@ -292,16 +356,71 @@ export const studentsData = [
     fieldOfStudy: "Applied Science",
   },
   {
-    name: "Sofonias Zewedu",
+    name: "Sophoniyas Zewdu",
     quote: `“ ኃይልን በሚሰጠኝ በክርስቶስ ሁሉን እችላለሁ። ” — ፊልጵስዩስ 4፥13`,
     image_urls: [
-      "https://drive.google.com/uc?export=view&id=1duzfjtJ3ftTsSxgWCrjuZxfuXvBRtGmW",
+      "https://drive.google.com/uc?export=view&id=1lZTyVFR3OCTClZwNDKY47muO6ZxjUgyt"
     ],
     video_urls: [],
     fieldOfStudy: "Applied Science",
+    role: "Department Committee"
   },
 
+
+
+
+
+
+// Civil
   {
+    name: "Amanuel Edossa",
+    quote: "",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1yNvWEZV2QHXcnJ8tsleZhN4XPj98FATq"],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering"
+  },
+   {
+    name: "Ayantu Demise",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1uI9DGBlczcgmiUI8PqSfEO7SOTNsP9GV",
+      "https://drive.google.com/uc?export=view&id=1Z9YfO_hrY_3NHIfuty6YYBT0Byh48ZV1",
+      "https://drive.google.com/uc?export=view&id=1zzS6I2w4Ft5ntc-sEA7QhzIUoFdUAMkl",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering",
+  },
+  
+  {
+    name: "Bona Birhanu",
+    quote: "",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1IkWZ9oi_Jma839YVY-WkLxQtsEaOkRUV"],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering"
+  },
+  
+  {
+    name: "Ephrata Habtamu",
+    quote: "",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1uIW89qCsUEojfSdAhJL93kIImhFkedRF"],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering"
+  },
+  {
+    name: "Eshetu Eltamo",
+    quote: "",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1p_LUd_twkWv194BuRpi1GJiJPGs99Mge"],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering"
+  },
+  {
+    name: "Gemechis Lema",
+    quote: "እግዚአብሔር ብቻውን መራኝ!!",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1edh5jWpVGHuZ8-1noA596gOwKIlMTSGC"],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering"
+  },
+   {
     name: "Henok Abera",
     quote: "",
     image_urls: [
@@ -310,13 +429,41 @@ export const studentsData = [
     video_urls: [],
     fieldOfStudy: "Civil Engineering",
   },
+  
   {
+    name: "Kalkidan Eueal Israel",
+    quote: "I can do all things through Christ who strengthens me. (Philippians 4:13) ",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1PGnV5-d0iJsHFD_ztu_1mr62CqQeaGcC"],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering"
+  },
+  {
+    name: "Kidist Siyoum",
+    quote: "Jer 29:11. For I know the plans I have for you",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1UL-DT0zGWAIsZ52zV_2BGrTvYGvZQ4f5"],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering"
+  },
+  {
+    name: "Hemani Mekonnen",
+    quote: "You are my God. My future is in your hand. Psalms 34:14 ",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1T6T3drgBlzhU_H3MY56OKB0NA6PBA2t3"],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering"
+  },
+  {
+    name: "Mahder Shimels Legesse",
+    quote: "ጨለማዬን ጌታ እያበራ  በሳት በደመናዉ እየመራ  ክፉ በሆኑብኝ ቀኖች ፋንታ ደስታን አጠገበኝ የእኔ ጌታ",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1tqckwsa4Qs0nOGLnsNKC5ein5TAFvRLX"],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering"
+  },
+    {
     name: "Mahlet Debebe",
     quote: "",
     image_urls: [
-      "https://drive.google.com/uc?export=view&id=10ShhlAuIEuwN8tLAnGfnevL59cMbS2wp",
-      "https://drive.google.com/uc?export=view&id=1-Z9W9OIMiuCjg6xFybMXFtMOTS8jyTMQ",
-      "https://drive.google.com/uc?export=view&id=1PbOO9hiRedE-V0KYAZdFlJf-sYZXYiSj",
+      "https://drive.google.com/uc?export=view&id=1cJYRcMOyNPBAN_WjTxMn1Q0X-4XovUQl",
+,
     ],
     video_urls: [],
     fieldOfStudy: "Civil Engineering",
@@ -325,12 +472,40 @@ export const studentsData = [
     name: "Martha Shewalem",
     quote: "",
     image_urls: [
-      "https://drive.google.com/uc?export=view&id=1QMRYlj9zM-7r_yg4P-XXuO96-OGBqRai",
-      "https://drive.google.com/uc?export=view&id=1PVuK1HGdvNrYhfGJCRk8KofbFUfqiy90",
+      "https://drive.google.com/uc?export=view&id=1Jdo3f-x_Cx6ssHkfc5jK6ECXQySPQ7wX"
     ],
     video_urls: [],
     fieldOfStudy: "Civil Engineering",
   },
+  {
+    name: "Nahom Abrar",
+    quote: "",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1jQRn1mRLgOqm1Sl4IGTBcEAf7QMWN1i6"],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering"
+  },
+  {
+    name: "Nahom Tadesse",
+    quote: "",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1bo8vnFtnyq61m4CDEGohAgyo6C4UHrzo"],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering"
+  },
+  {
+    name: "Samuel Seifu",
+    quote: "የልጅነቴ ነህ መቼ ይረሳኛል ውለታህ ብዙ ነው ዛሬም ትዝ ይለኛል። ብዙ ዘመን እራራህልኝ!!!",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1hkNswg_b26ydAw77P0i3yaUD9qc0PqgK"],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering"
+  },
+  {
+    name: "Temesgen Fiseha",
+    quote: "",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1GNYSbQC2k_UyWsO70HcXE6zs4SoZdREB"],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering"
+  },
+  
   {
     name: "Woldeab Asfaw",
     quote: "",
@@ -342,14 +517,93 @@ export const studentsData = [
     fieldOfStudy: "Civil Engineering",
   },
   {
-    name: "Yabsira Mengistu",
+    name: "Yabets Zewde",
     quote: "",
-    image_urls: [
-      "https://drive.google.com/uc?export=view&id=18wVBdMfzCqRIzZdpMXGUVm3MQbsj16Ws",
-      "https://drive.google.com/uc?export=view&id=1gauj8Y_qzYiVSHeF5MVNz6jtTpRqE6Es",
-    ],
+    image_urls: ["https://drive.google.com/uc?export=view&id=1VE0ux6P-6rDji6GLZWTOm107PBLSZR9W"],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering"
+  },
+  {
+    name: "Yonatan Habtamu ",
+    quote: "I’ve faced storms, yet stood firm by God’s grace. I can do all things through Christ who strengthens me. (Philippians 4:13) This is just the beginning.",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1MaBhBgYMvn5fvq_KPTN0jIkR_eEruJv_"],
+    video_urls: [],
+    fieldOfStudy: "Civil Engineering"
+  },
+  
+    {
+    name: "Beminet Geremew",
+    quote: "“አንበሶች ሊያጡ፣ ሊራቡም ይችላሉ፤ እግዚአብሔርን የሚሹ ግን መልካም ነገር አይጐድልባቸውም።”   — መዝሙር 34፥10 (አዲሱ መ.ት)",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1UqBiaTeyyCdn-CZ0po38MiiQ0rskGtD1"],
     video_urls: [],
     fieldOfStudy: "Civil Engineering",
+    role: "Department Committee"
+  },
+
+
+
+ 
+
+  
+  
+     
+ 
+
+
+  // chem
+  {
+    name: "Amen Tesfaye",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1eEmdB00y8GqRcVjF98Vw-nFhWqVYEouF",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Chemical Engineering",
+  },
+    {
+    name: "Alazar Tafese",
+    quote: "Ha Ubbay Tawu, Ne Baggara Yiida Bonchchuwa.",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1xG94WS2b2E3Im6X8DmGY-utPtf3rQOR7",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Chemical Engineering",
+  },
+   {
+    name: "Elshaday Anteneh",
+    quote: "I Could never boast in my accomplishments, only hoped in God with confidence ",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1xNWauuPOQN76urc0KpTyo56RKABIbiLM",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Chemical Engineering",
+  },
+  {
+    name: "Merry Demisse",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1yk-Qzhu5hlJGRLnGGGMSiGlEGhMex2wu",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Chemical Engineering",
+  },
+  {
+    name: "Minasse Alemayehu",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1Qfnc6wh2b5jIq1DGxp0J_Lu3xb1bfEPB",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Chemical Engineering",
+  },
+    {
+    name: "Solomon Molla ",
+    quote: "የረዳኝን እግዚአብሔርን አመሰግናለሁ፥ ለልዑል እግዚአብሔር ስምም እዘምራለሁ። መዝሙር 13:6",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1FD4x9NpjIT1fMtKQVNAnhuxMXar3OG-V",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Chemical Engineering",
   },
   {
     name: "Wegene Fikire",
@@ -360,13 +614,38 @@ export const studentsData = [
     video_urls: [],
     fieldOfStudy: "Chemical Engineering",
   },
-  {
-    name: "Ayantu Demise",
-    quote: "",
+ 
+
+
+ 
+
+  // elec
+  
+     {
+    name: "Anatol Shiferaw",
+    quote: '',
     image_urls: [
-      "https://drive.google.com/uc?export=view&id=1Tf5oVZ_JIfeOrUKeqHFNVCRtLZOrCIG8",
-      "https://drive.google.com/uc?export=view&id=1zzS6I2w4Ft5ntc-sEA7QhzIUoFdUAMkl",
-    ],
+    "https://drive.google.com/uc?export=view&id=1Fqnicuno379-vCysquqmhLz6INmFMfBY"
+    ], 
+    video_urls: [],
+    fieldOfStudy: "Electrical Engineering",
+  },
+   {
+    name: "Asayehegn Abera",
+    quote: '',
+    image_urls: [
+    "https://drive.google.com/uc?export=view&id=1VyeBlXFZgwl4iQeQREj9MhxxeaWw4KQQ"
+    ], 
+    video_urls: [],
+    fieldOfStudy: "Electrical Engineering",
+  },
+     {
+    name: "Ayantu Solomon ",
+    quote: '',
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=15wWQou-Wo6fa_4kf10zALESKZDz82JkH"
+    
+    ], 
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
@@ -374,30 +653,67 @@ export const studentsData = [
     name: "Barkot Muhaba",
     quote: "Short circuits challenged me but sparked a quick reboot to come.",
     image_urls: [
+      "https://drive.google.com/uc?export=view&id=12LB5inSDyT9zplRNydro5BAzvt2k50mT",
       "https://drive.google.com/uc?export=view&id=1w2iJ9V3ZAnE-qmEqBOqT4wk0oc0eArLA",
       "https://drive.google.com/uc?export=view&id=1G1-yvxaDr15kxuwRAJIKQHk2ES36GzJn",
-    ], // Local images will need to be handled separately
+    ], 
+    video_urls: [],
+    fieldOfStudy: "Electrical Engineering",
+  },
+   {
+    name: "Barnbas Getachew",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1p0Gg-HlFBjqDLmwSKk0snSX1C7cBBVdv"
+  ], 
+    video_urls: [],
+    fieldOfStudy: "Electrical Engineering",
+  },
+   {
+    name: "Barnbas Gebere",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1CAJCPPeMZAOu2MJH1z3tdl-kBATWIaix"
+  ], 
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
   {
     name: "Beamlak Tesfaye",
     quote: "Psalms 23",
-    image_urls: [], // Local images will need to be handled separately
+    image_urls: ["https://drive.google.com/uc?export=view&id=160bm_KDjpk0Ps53CNYQiDPQsp5TQykQW",],
+    
+    video_urls: [],
+    fieldOfStudy: "Electrical Engineering",
+  },
+     {
+    name: "Beka Fituma",
+    quote: '',
+    image_urls: [
+    "https://drive.google.com/uc?export=view&id=1RhCeir5fKqCNR1vWiMU6foOTZf6JWFM4"
+    ], 
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
   {
     name: "Bilisuma Befikadu",
     quote: "How can I repay the Lord for all his goodness to me? Ps 116፥12",
-    image_urls: [], // Local images will need to be handled separately
+    image_urls: ["https://drive.google.com/uc?export=view&id=19QhAsS6pTJVmGwHHyTbKfzdXqiySZqNq"], 
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
+    {
+    name: "Bemnet Teferi",
+    quote: "",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1T7sCbFROiZE5Tj0ezqlkaMbU8LbOIUtR"], 
+    video_urls: [],
+    fieldOfStudy: "Electrical Engineering",
+  },
+  
   {
     name: "Ephrata Zerfu",
     quote: "ታላቅ ድንቅ አምላክ ከኔ ጋራ ነበር፤ ነውም፤ ይሆንማል!!!",
-    image_urls: [], // Local images will need to be handled separately
+    image_urls: ["https://drive.google.com/uc?export=view&id=1DeSIaIjxyg2bsBaJnrvfrho1twLGvU4h"], 
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
@@ -405,7 +721,7 @@ export const studentsData = [
     name: "Eyasu Iticha Dangiya",
     quote:
       "The fear of man bringeth a snare: but whoso putteth his trust in the LORD shall be safe. Proverbs 29:25",
-    image_urls: [], // Local images will need to be handled separately
+    image_urls: ["https://drive.google.com/uc?export=view&id=1WBh6WMULjSmrIwBt_hGdpD4g1HkgtDgV"], 
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
@@ -413,7 +729,28 @@ export const studentsData = [
     name: "Getu Bekele",
     quote:
       '"In all your ways ACKNOWLEDGE HIM, And He shall DIRECT YOUR PATHS." Proverbs 3÷6',
-    image_urls: [], // Local images will need to be handled separately
+    image_urls: ["https://drive.google.com/uc?export=view&id=1_s-a2cVeUVT_pIjckXwWzSCCgulqVWin"], 
+    video_urls: [],
+    fieldOfStudy: "Electrical Engineering",
+  },
+      {
+    name: "Idean Adamu",
+    quote: "",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1VLqY-Eh42NGpVguxjA-9m105HpaFO-ro"], 
+    video_urls: [],
+    fieldOfStudy: "Electrical Engineering",
+  },
+      {
+    name: "Michael Kefyalew",
+    quote: "",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1EmMNqFm-tYM7ksP0Xr-fvL1prpEBaoDH"], 
+    video_urls: [],
+    fieldOfStudy: "Electrical Engineering",
+  },
+      {
+    name: "Nahom wondwossen",
+    quote: "",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1urzKQNy7u_tHO1_EkEtCzst46c06z-4E"], 
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
@@ -422,10 +759,60 @@ export const studentsData = [
     quote: '"Yet I will rejoice in the LORD" Habakkuk 3:18',
     image_urls: [
       "https://drive.google.com/uc?export=view&id=1G6Qav22GhAYAnq9NuPjnijSS7WMoS1k9",
-    ], // Local images will need to be handled separately
+    ], 
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
+{
+    name: "Natnael Dejene",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=163NOMcFDyS0MciNryJnluANPDM6Eoy8q",
+    ], 
+    video_urls: [],
+    fieldOfStudy: "Electrical Engineering",
+  },
+    {
+    name: "Lidya Yoseph",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1K0J59y1rfVLEXscv9PdffMnVA37GgSa4",
+    
+    ],
+    video_urls: [],
+    fieldOfStudy: "Electrical Engineering",
+  },
+
+
+     {
+    name: "Ruth Abebe ",
+    quote: "",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1qmBa1se4PDh9qWnPEWj2FIQP-hAvqgcZ"], 
+    video_urls: [],
+    fieldOfStudy: "Electrical Engineering",
+  },
+     {
+    name: "Samuel Nigusse",
+    quote: "Grateful for the time I had with you all. May god's blessings follow you in everything you do.",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1fwwPwcEmPiYqZN08DjG3C-dQ75L4NgCy"], 
+    video_urls: [],
+    fieldOfStudy: "Electrical Engineering",
+  },
+     {
+    name: "Selam tamirat ",
+    quote: "",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1TwdDap7IAr7MdUYM9b5zXLYiLUU5DLVu"], 
+    video_urls: [],
+    fieldOfStudy: "Electrical Engineering",
+  },
+     {
+    name: "Simret Kahsay",
+    quote: "",
+    image_urls: ["https://drive.google.com/uc?export=view&id=1sk0l7ntLxdfUzK4JKV3M6EgReorWdp0l"], 
+    video_urls: [],
+    fieldOfStudy: "Electrical Engineering",
+  },
+  
   {
     name: "Tinsae Getenet",
     quote: "Circuits complete— glory to the Master Designer.",
@@ -436,44 +823,125 @@ export const studentsData = [
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
   },
+
   {
-    name: "Lidya Yoseph",
-    quote: "",
-    image_urls: [
-      "https://drive.google.com/uc?export=view&id=1jbgICVZQ2LcMkO0dyDDRjT7QbyaXwy7f",
-      "https://drive.google.com/uc?export=view&id=1Fm1PSYHOyL5oLFi4zNDZtoGORMVzHfvn",
-    ],
-    video_urls: [],
-    fieldOfStudy: "Electrical Engineering",
-  },
-  {
-    name: "Yabets",
+    name: "Yabets Birhanu",
     quote: "Endless mercy, boundless grace!! Psalms 103:8",
     image_urls: [
-      "https://drive.google.com/uc?export=view&id=1mZsl5Z-dXtBSn2Es20_nQy4Ppp9Wo6mK",
+      "https://drive.google.com/uc?export=view&id=1VtxemciFJRcPZZK4Ff_47dNVhwc1d8yx",
     ],
     video_urls: [],
     fieldOfStudy: "Electrical Engineering",
+    role: "Department Committte"
+    
   },
-  {
-    name: "Yoseph Girma",
-    quote: '"አቤቱ፥ ንጹሕ ልብን ፍጠርልኝ፥ የቀናውንም መንፈስ በውስጤ አድስ።" - መዝሙረ ዳዊት 51:10',
+ 
+
+
+
+
+//  Electromechaical
+   {
+    name: "Abel Wondesen Bogale",
+    quote: "Trust in the Lord with all your heart and lean not on your own understanding. — Proverbs 3:5",
     image_urls: [
-      "https://drive.google.com/uc?export=view&id=1xtABk8uxhu4n9aU_MUSSCjbSAXckole9",
+      "https://drive.google.com/uc?export=view&id=1ZHW1Xbp5EeqGGZP91N3bJ8eIEUt2VtWW",
     ],
     video_urls: [],
     fieldOfStudy: "ElectroMechanical Engineering",
   },
-  {
-    name: "Natnael Gena",
+   {
+    name: "Abel Wondwossen Lanka",
+    quote: "I can do everything through Christ, who gives me strength. ",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1mDDIDHD_h-8TtZuDvQ8hUzn8APyt0VO2",
+    ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering",
+  },
+     {
+    name: "Abenezer Tesfaye",
     quote: "",
     image_urls: [
-      "https://drive.google.com/uc?export=view&id=1L2RLIPqYm6bYm4tpeRs-q33e2gQoPPmq",
+      "https://drive.google.com/uc?export=view&id=1hGRfGBhB8pphSvoOxJ03zxuGwYSJDD7v"
+  ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering",
+  },
+
+  {
+    name: "Betselot Sisay",
+    quote: "All glory to God, who writes better stories than I could ever have.",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1gMMcDbEuL0pn_pHBxZp5Pkd_VDeaHC5M",
+      "https://drive.google.com/uc?export=view&id=168yYYNVRSJjOkSmkFhb4eS3gANx3jvv_",
+      "https://drive.google.com/uc?export=view&id=1kDFY2gjVLyhCk3Bs5Nc3Foc26E85HPBs",
+      "https://drive.google.com/uc?export=view&id=1_mEGw0cQmKjpDob-Rrr63r7dfInjJHVe",
+      "https://drive.google.com/uc?export=view&id=1fKRuG-STGBlcJ_xZGtvN7sQKsfU1B35g",
+      "https://drive.google.com/uc?export=view&id=1Vy9v_Y32emxt9z7HhXsNrPZvoRJcHo18"
+    ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering"
+  },
+  {
+    name: "Betlhem Girma",
+    quote: "“እርሱም፦ ጸጋዬ ይበቃሃል፥ ኃይሌ በድካም ይፈጸማልና አለኝ። እንግዲህ የክርስቶስ ኃይል ያድርብኝ ዘንድ በብዙ ደስታ በድካሜ ልመካ እወዳለሁ።”   — 2ኛ ቆሮ 12፥9",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1NvsN2moEvEtAHWbGXZO_Gkx5tfALbf7F"
     ],
     video_urls: [],
     fieldOfStudy: "ElectroMechanical Engineering",
   },
+{
+  name: "Biruk Castro",
+  quote: "እግዚአብሔር  ርስቴ ነው",
+  image_urls: [
+    "https://drive.google.com/uc?export=view&id=1r_hA8VIGnrfk_o3jp6vcX2rUKO0QkhQR"
+  ],
+  video_urls: [],
+  fieldOfStudy: "ElectroMechanical Engineering"
+},
+
   {
+    name: "Eyosafet Alem",
+    quote: "Most of us had no idea about the kind of life that was waiting for us when we came to fello on the first day. But God gave us beautiful friends, families and memories that will last till the last days. And that good GOD will keep doing that in the next chapter of our lives too. Thank you all!! Love u.",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1elKTdYWkpP26Jj_QhdgsYZ6EL_WufYYF",
+,
+      "https://drive.google.com/uc?export=view&id=1x7ZX3C1imvwND2KOOxWQW_Lc1T4MjPNt",
+      "https://drive.google.com/uc?export=view&id=196nJQYKh5E3KiNod-Q7kIRxPoYhRXn37"
+    ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering"
+  },
+     {
+    name: "Getabalew Asfaw",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1TciUjc-ix4POYEeFO6dRiBMQnp-gNoY4",
+    ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering",
+  },
+   {
+    name: "Girum Getachew",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1tJf9LzTwfBAzWAKlhaWQVSkqImN5cV9E",
+    ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering",
+  },
+     {
+    name: "Israel Edosa",
+    quote: "His grace carried me",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1HDCKyIJVKRE63oZIpgAp3VIrZB_Lc1nb"
+  ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering",
+  },
+   {
     name: "Jitu Gudina",
     quote: "",
     image_urls: [
@@ -483,17 +951,37 @@ export const studentsData = [
     video_urls: [],
     fieldOfStudy: "ElectroMechanical Engineering",
   },
-  {
-    name: "Betlhem Girma",
+   {
+    name: "Natnael Gena",
     quote: "",
     image_urls: [
-      "https://drive.google.com/uc?export=view&id=1pRdFR4uC4QiNGBeG15RaG4SLEpHlnpMn",
-      "https://drive.google.com/uc?export=view&id=1pRdFR4uC4QiNGBeG15RaG4SLEpHlnpMn",
+      "https://drive.google.com/uc?export=view&id=1L2RLIPqYm6bYm4tpeRs-q33e2gQoPPmq",
     ],
     video_urls: [],
     fieldOfStudy: "ElectroMechanical Engineering",
   },
   {
+    name: "Natnael Tamrat Moja",
+    quote: "በመንገድህ ሁሉ እርሱን እወቅ፥ እርሱም ጎዳናህን ያቀናልሃል። ምሳሌ 3፥6",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1UjBLO7flgjVDTMCmx3jrxhUtlp2VQX1q",
+      
+      
+    ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering"
+  },
+  {
+    name: "Nebiyu Daniel",
+    quote: "“እግዚአብሔር ብቻውን መራው፤ ከእርሱም ጋር ሌላ አምላክ አልነበረም።” ኦሪት ዘዳግም 32 12፤",
+    image_urls: [
+    "https://drive.google.com/uc?export=view&id=1X4UggO9e8U_rZd5_NrwZaG52MH8rs4sn"
+    
+    ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering"
+  },
+    {
     name: "Neway Temesgen",
     quote: "- “እግዚአብሔር ብቻውን መራው፤ ከእርሱም ጋር ሌላ አምላክ አልነበረም።” — ዘዳግም 32፥12",
     image_urls: [
@@ -502,15 +990,186 @@ export const studentsData = [
     video_urls: [],
     fieldOfStudy: "ElectroMechanical Engineering",
   },
+   {
+    name: "Mintesenot Lambebo",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1eZi2vynvOQIEoLvlQnF47Nd5l2baaNVt",
+ ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering",
+  },
   {
-    name: "Shalom",
+    name: "Rafaela Melkamu",
+    quote: "እግዚአብሔርም ሁልጊዜ ይመራሃል፤ ነፍስህንም በመልካም ነገር ያጠግባል አጥንትህንም ያጠናል",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1zvVSHLK4M4ZgNof9waHZ-x-LoRubbwzr",
+      
+     
+    ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering"
+  },
+     {
+    name: "Rediate Tarekegn",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1xYJKR_IlBHFhhFSMapPSEN0huewlgV4d"
+ ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering",
+  },
+  {
+    name: "Samuel Mulugeta",
+    quote: "You can prepare your horses for battle, but only the Lord can give you the victory. Proverbs 21:31 ERV",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1JMv05NUvAHLotRpRsLsB1VLycio0WDoS"
+    ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering"
+  },
+   {
+    name: "Yoseph Girma",
+    quote: '"አቤቱ፥ ንጹሕ ልብን ፍጠርልኝ፥ የቀናውንም መንፈስ በውስጤ አድስ።" - መዝሙረ ዳዊት 51:10',
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1GetnfNVvT2QjWhhB0rfBg3xFTpcKwrEt",
+    ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering",
+    
+  },
+  {
+    name: "Urji Eyasu",
+    quote: "All things work together for good for those who Love GOD. Romans 8:28",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1DPPuylKh1VUXW5rLmzAkggAXiAqv9YnH"
+    ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering"
+  },
+  {
+    name: "Yakin Samuel",
+    quote: "“እግዚአብሔር ብቻውን መራው፤ ከእርሱም ጋር ሌላ አምላክ አልነበረም።” — ዘዳግም 32፥12",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1L-LzrSX2fWwVN1fo2Vou5MPjAXHzJ_ju"
+    ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering"
+  },
+  {
+    name: "Yared Genanaw ",
+    quote: "Where God guides, he provides. Isaiah 58:11",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=17SMKrMv519-N-p3ud_IG8Y6M11iiCulV",
+      "https://drive.google.com/uc?export=view&id=14yP6mzsxYdcMWBYeTaNeqoUZLCzJ-suV"
+    ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering"
+  },
+  {
+    name: "Yamlak Sisay",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1I-NxShM41cxfZix0agD88k7QAWO86TCp"
+   ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering"
+  },
+  
+  {
+    name: "Yeabsira Tagese",
+    quote: '',
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1Q2s0uUJLO93npodbP8fOsszC18nr1dNB",
+    ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering",
+  },
+     {
+    name: "Tumim Abraham",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=15P2r37wEhfuBwHt5nOIXZw6VL0C17Yke",
+ ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering",
+  },
+    {
+    name: "Yoseph Girma",
+    quote: '"አቤቱ፥ ንጹሕ ልብን ፍጠርልኝ፥ የቀናውንም መንፈስ በውስጤ አድስ።" - መዝሙረ ዳዊት 51:10',
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1GetnfNVvT2QjWhhB0rfBg3xFTpcKwrEt",
+    ],
+    video_urls: [],
+    fieldOfStudy: "ElectroMechanical Engineering",
+    role: "Department Committee",
+  },
+
+
+
+
+// Envt 
+
+  {
+    name: "Aser Demeke",
+    quote: "“እግዚአብሔር፣ ለሚወዱትና እንደ ሐሳቡ ለተጠሩት፣ ነገር ሁሉ ተያይዞ ለበጎ እንዲሠራ እንደሚያደርግላቸው እናውቃለን።”   — ሮሜ 8፥28",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1yLHPAY182rYlBmEGfZzAvMNX6tMvKYQc",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Environmental Engineering",
+  },
+  {
+    name: "Shalom Tariku",
     quote: "",
     image_urls: [
       "https://drive.google.com/uc?export=view&id=1LCsx24j_Ncwc2gQ21FwnIf3M6Cd4xnlE",
     ],
     video_urls: [],
     fieldOfStudy: "Environmental Engineering",
+   
   },
+  {
+    name: "Tinsae Getachew",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1GkA86e9Kn9jUHpW_1WuKZhEXp0J_MYZD",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Environmental Engineering",
+  },
+   {
+    name: "Yohannes Getachew",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1rvyY5ZM3YqvNSV64WJQqRT-mMfU1T3VN",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Environmental Engineering",
+  },
+  {
+    name: "Abigal Mulugeta",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1jAgman6kUxN4TLnEm1QmH3CURhWGUPTk",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Environmental Engineering",
+    role: "Department Committee"
+  },
+
+ 
+
+
+
+
+
+
+
+
+
+// mechanical
+
   {
     name: "Amanuel kefyalew haile",
     quote: "ኦሪት ዘዳግም 32 12 እግዚአብሔር ብቻውን መራው፤ ከእርሱም ጋር ሌላ አምላክ አልነበረም።",
@@ -522,25 +1181,7 @@ export const studentsData = [
       "https://drive.google.com/uc?export=view&id=1BQ0lq2EJqmIYEesSUisBVWprMryakZLS",
     ],
     video_urls: [],
-    fieldOfStudy: "Architecture",
-  },
-  {
-    name: "Yannet Solomon",
-    quote: "Greatly Blessed. Highly Favored.",
-    image_urls: [
-      "https://drive.google.com/uc?export=view&id=168OIa78Az-Kw5g2AoUyOgwhMFme5YQnj",
-    ],
-    video_urls: [],
-    fieldOfStudy: "Architecture",
-  },
-  {
-    name: "Feben Guret",
-    quote: "Through it all, I was held.እግዚአብሄር ይመስገን!",
-    image_urls: [
-      "https://drive.google.com/uc?export=view&id=1K4nb_dv-bEfZMBLrrIBgJHB1MqSjgovP",
-    ],
-    video_urls: [],
-    fieldOfStudy: "Architecture",
+    fieldOfStudy: "Mechanical Engineering",
   },
   {
     name: "Ameha Mulugeta",
@@ -552,15 +1193,132 @@ export const studentsData = [
       "https://drive.google.com/uc?export=view&id=122xx_v9WiWmJ7eXqxaEYyE8JMxicQDAM",
     ],
     video_urls: [],
-    fieldOfStudy: "Architecture",
+    fieldOfStudy: "Mechanical Engineering",
   },
-  {
+ {
     name: "Atse Fasil Kebede",
     quote: "ሥራህን ለእግዚአብሔር አደራ ስጥ፥ አሳብህም ትጸናለች። ምሳሌ 16፥3",
     image_urls: [
       "https://drive.google.com/uc?export=view&id=1EERyhlPunb5QEODI7kCfF4W_00vC6GSt",
       "https://drive.google.com/uc?export=view&id=1Pi8IYu4X2jjW800FoF7ixXl1870iouFs",
       "https://drive.google.com/uc?export=view&id=1_OPycTa0h8MtG4x3GgVwMSKiCnyKa6TS",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Mechanical Engineering",
+  },
+    {
+    name: "Daniel Tenkir",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1druK6M75p00ixONDCHhysiZIXzFKRZHM"
+      ,
+    ],
+    video_urls: [],
+    fieldOfStudy: "Mechanical Engineering",
+  },
+    {
+    name: "Dejene Daniel",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1GMtqnQdAAmIGPwKG1mdDZr1ZPTUHMWhA",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Mechanical Engineering",
+  },
+   {
+    name: "Kidus Mengistu",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1peB6JGClbNYe-ipnoV1BBH37RF6ZfpQm"
+
+      ,
+    ],
+    video_urls: [],
+    fieldOfStudy: "Mechanical Engineering",
+  },
+   {
+    name: "Yordanos Umer Mohammed",
+    quote: "አቤቱ፥ በልቤ ሁሉ አመሰግንሃለሁ፥ ተአምራትህንም ሁሉ እነግራለሁ። — መዝሙር 9፥1",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=10x6DxInWGD-Fn_OjB77M85QblIfBwiw3",
+      "https://drive.google.com/uc?export=view&id=190HuGgrq9evND8QtzKMkwBrVThHbkRzH",
+      "https://drive.google.com/uc?export=view&id=1g_tOahkU_McN1fSfsEUYyIAslqpLiS31",
+      "https://drive.google.com/uc?export=view&id=1S_DohzCvV3w7FRVySof6x1uutkfuBZXU",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Mechanical Engineering",
+  },
+ 
+  {
+    name: "Yoseph Abraham",
+    quote: ' " እግዚአብሔር እረኛዬ ነው፥ የሚያሳጣኝም የለም። " (መዝሙረ ዳዊት 23:1)',
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1zpDv3JgA-PXODVyQpw1SEQfpzoBrmF8r",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Mechanical Engineering",
+  },
+
+  {
+    name: "Amanuel Kefyalew ",
+    quote: "ኦሪት ዘዳግም 32 12 እግዚአብሔር ብቻውን መራው፤ ከእርሱም ጋር ሌላ አምላክ አልነበረም።",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1tevrSFWI4kdxjkHheuyZAsuLRiJwW-hl",
+      "https://drive.google.com/uc?export=view&id=1JtF1zb_sEOULx0EzOgmAsoo3_jweS4OR",
+      "https://drive.google.com/uc?export=view&id=1pwxFT9bP8PMVtSsF5rUTEsdr7fcq56F3",
+      "https://drive.google.com/uc?export=view&id=1JiRXe6lHD1v4OT41CEAvmKJukgGE1Lqj",
+      "https://drive.google.com/uc?export=view&id=1BQ0lq2EJqmIYEesSUisBVWprMryakZLS",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Mechanical Engineering",
+    role: "Department Committte"
+  },
+  
+
+
+
+
+// Arch
+
+  {
+    name: "Amanuel Getnet",
+    quote: "ኀይልን በሚሰጠኝ በርሱ ሁሉን ማድረግ እችላለሁ። ፊልጵስዩስ 4:13",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=19GD3akQ2ks7ooHsLRvr7oBO2DuNJbCxk",
+
+    ],
+    video_urls: [],
+    fieldOfStudy: "Architecture",
+  },
+  {
+    name: "Amanuel Meles ",
+    quote: '" ይህች ከእግዚአብሔር ዘንድ ሆነች፥ ለዓይናችንም ድንቅ ናት። " መዝሙር 118 :23',
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1POShKfhYlyKeO_npMguMpXG-x5qUactW",
+      "https://drive.google.com/uc?export=view&id=1x_WfsL8toE8lIBG60HraJgcrbY0oEI05",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Architecture",
+  },
+    {
+    name: "Desta Fute",
+    quote:
+      "NOT BECAUSE OF WHAT I'VE DONE, BUT BECAUSE OF WHO YOU ARE ... GOD YOU'RE FAITHFUL!",
+    image_urls: [
+      
+      "https://drive.google.com/uc?export=view&id=1_hD_FGvyraBYUEaz33U06RwR5NDUyQmv",
+      "https://drive.google.com/uc?export=view&id=1UPtnFVuOtzQ-Co1djet6K1ziCsAXvXvP",
+      "https://drive.google.com/uc?export=view&id=1dQq_K_mvWOmfWeuLkDlIZ7XykNmANpyb",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Architecture",
+  },
+
+ {
+    name: "Feben Guret",
+    quote: "Through it all, I was held.እግዚአብሄር ይመስገን!",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1K4nb_dv-bEfZMBLrrIBgJHB1MqSjgovP",
     ],
     video_urls: [],
     fieldOfStudy: "Architecture",
@@ -574,71 +1332,8 @@ export const studentsData = [
     video_urls: [],
     fieldOfStudy: "Architecture",
   },
-  {
-    name: "Yordanos Umer Mohammed",
-    quote: "አቤቱ፥ በልቤ ሁሉ አመሰግንሃለሁ፥ ተአምራትህንም ሁሉ እነግራለሁ። — መዝሙር 9፥1",
-    image_urls: [
-      "https://drive.google.com/uc?export=view&id=10x6DxInWGD-Fn_OjB77M85QblIfBwiw3",
-      "https://drive.google.com/uc?export=view&id=190HuGgrq9evND8QtzKMkwBrVThHbkRzH",
-      "https://drive.google.com/uc?export=view&id=1g_tOahkU_McN1fSfsEUYyIAslqpLiS31",
-      "https://drive.google.com/uc?export=view&id=1S_DohzCvV3w7FRVySof6x1uutkfuBZXU",
-    ],
-    video_urls: [],
-    fieldOfStudy: "Architecture",
-  },
-  {
-    name: "Dejene Daniel",
-    quote: "",
-    image_urls: [
-      "https://drive.google.com/uc?export=view&id=1GMtqnQdAAmIGPwKG1mdDZr1ZPTUHMWhA",
-    ],
-    video_urls: [],
-    fieldOfStudy: "Mechanical Engineering",
-  },
-  {
-    name: "Yoseph Abraham",
-    quote: ' " እግዚአብሔር እረኛዬ ነው፥ የሚያሳጣኝም የለም። " (መዝሙረ ዳዊት 23:1)',
-    image_urls: [
-      "https://drive.google.com/uc?export=view&id=1zpDv3JgA-PXODVyQpw1SEQfpzoBrmF8r",
-    ],
-    video_urls: [],
-    fieldOfStudy: "Mechanical Engineering",
-  },
-  {
-    name: "Amanuel Getnet",
-    quote: "ኀይልን በሚሰጠኝ በርሱ ሁሉን ማድረግ እችላለሁ። ፊልጵስዩስ 4:13",
-    image_urls: [
-      "https://drive.google.com/uc?export=view&id=1_SZiwb_Cerh0njCXdnaehknD_EfxpSQ9",
-      "https://drive.google.com/uc?export=view&id=1-dXUm7rdzv0UwrzMP5fhNsf_WWYEvNBV",
-      "https://drive.google.com/uc?export=view&id=1Qk9zGIvsXI6VfBi0hAq3155ezN_NvClT",
-    ],
-    video_urls: [],
-    fieldOfStudy: "Architecture",
-  },
-  {
-    name: "Amanuel Meles G/Tsadik",
-    quote: '" ይህች ከእግዚአብሔር ዘንድ ሆነች፥ ለዓይናችንም ድንቅ ናት። " መዝሙር 118 :23',
-    image_urls: [
-      "https://drive.google.com/uc?export=view&id=1POShKfhYlyKeO_npMguMpXG-x5qUactW",
-      "https://drive.google.com/uc?export=view&id=1x_WfsL8toE8lIBG60HraJgcrbY0oEI05",
-    ],
-    video_urls: [],
-    fieldOfStudy: "Architecture",
-  },
-  {
-    name: "Desta Fute Guraro",
-    quote:
-      "NOT BECAUSE OF WHAT I'VE DONE, BUT BECAUSE OF WHO YOU ARE ... GOD YOU'RE FAITHFUL!",
-    image_urls: [
-      "https://drive.google.com/uc?export=view&id=1_hD_FGvyraBYUEaz33U06RwR5NDUyQmv",
-      "https://drive.google.com/uc?export=view&id=1UPtnFVuOtzQ-Co1djet6K1ziCsAXvXvP",
-      "https://drive.google.com/uc?export=view&id=1dQq_K_mvWOmfWeuLkDlIZ7XykNmANpyb",
-    ],
-    video_urls: [],
-    fieldOfStudy: "Architecture",
-  },
-  {
-    name: "Kalkidan Bantewesen Wetango",
+   {
+    name: "Kalkidan Bantewesen",
     quote: "ከልጅነቴ የመራኸኝ ሆይ ጥጉነህ ያባትነት መዝ19፡7",
     image_urls: [
       "https://drive.google.com/uc?export=view&id=1RnnU8KPKU7ET5KbV5lTvjI2_uOuZf8ea",
@@ -650,7 +1345,29 @@ export const studentsData = [
     video_urls: [],
     fieldOfStudy: "Architecture",
   },
+{
+    name: "Moges Zeleke",
+    quote: "",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1TFIt_yZfjXYjoFXeDWFRfP7H5je3sQgm"
+
+    ],
+    video_urls: [],
+    fieldOfStudy: "Architecture",
+  },
   {
+    name: "Yoska Getachew",
+    quote: "Rod and staff comfort through the valley",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=14j0ol1nWPQf5kCLKSYmoK4_BXMhUDCzo",
+      "https://drive.google.com/uc?export=view&id=1BREKWk4socvuzFtuz25Mg69IKpLyb9sz",
+      "https://drive.google.com/uc?export=view&id=1zFNIqFsHEYK5uSbCB6Speqz8rSDh8ml6",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Architecture",
+    
+  },
+    {
     name: "Samuel Minassie Deressu",
     quote: "It's been God since day one.",
     image_urls: [
@@ -661,14 +1378,39 @@ export const studentsData = [
     fieldOfStudy: "Architecture",
   },
   {
-    name: "Yoska Getachew",
-    quote: "Rod and staff comfort through the valley",
+    name: "Yannet Solomon",
+    quote: "Greatly Blessed. Highly Favored.",
     image_urls: [
-      "https://drive.google.com/uc?export=view&id=1rImvmdaGD8A6Ser0AwrWMLYxsn-h93hZ",
-      "https://drive.google.com/uc?export=view&id=1zFNIqFsHEYK5uSbCB6Speqz8rSDh8ml6",
+      "https://drive.google.com/uc?export=view&id=168OIa78Az-Kw5g2AoUyOgwhMFme5YQnj",
     ],
     video_urls: [],
     fieldOfStudy: "Architecture",
+  },
+  
+   {
+    name: "Yoska Getachew",
+    quote: "Rod and staff comfort through the valley",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=14j0ol1nWPQf5kCLKSYmoK4_BXMhUDCzo",
+    ],
+    
+    video_urls: [],
+    fieldOfStudy: "Architecture",
+    role: "Department Committte"
+  },
+ 
+  
+  
+
+  // Mining
+   {
+    name: "Bereket Bula",
+    quote: "ጌታእኮ ነው",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1fdVfVSIhsDHWGJPAVFgVVlb-9Wdat7Ar",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Mining Engineering",
   },
   {
     name: "Bernabas Awgchew",
@@ -676,6 +1418,15 @@ export const studentsData = [
     image_urls: [
       "https://drive.google.com/uc?export=view&id=1Rxri7WmhSk2ojfYCKCdf4gMO07LYtpxe",
       "https://drive.google.com/uc?export=view&id=1JDnbMKg29DchnnfpsMJSaiGvw15xHlpx",
+    ],
+    video_urls: [],
+    fieldOfStudy: "Mining Engineering",
+  },
+   {
+    name: "Eyob Daniel",
+    quote: "ነገር ሁሉ ለበጎ ነው",
+    image_urls: [
+      "https://drive.google.com/uc?export=view&id=1Geme92cXRfG4EjcG7A_D-smsadiRiCAL",
     ],
     video_urls: [],
     fieldOfStudy: "Mining Engineering",
@@ -690,31 +1441,6 @@ export const studentsData = [
     video_urls: [],
     fieldOfStudy: "Mining Engineering",
   },
-  {
-    name: "Eyob Daniel",
-    quote: "ነገር ሁሉ ለበጎ ነው",
-    image_urls: [
-      "https://drive.google.com/uc?export=view&id=1Geme92cXRfG4EjcG7A_D-smsadiRiCAL",
-    ],
-    video_urls: [],
-    fieldOfStudy: "Mining Engineering",
-  },
-  {
-    name: "Bereket Bula",
-    quote: "ጌታእኮ ነው",
-    image_urls: [
-      "https://drive.google.com/uc?export=view&id=1fdVfVSIhsDHWGJPAVFgVVlb-9Wdat7Ar",
-    ],
-    video_urls: [],
-    fieldOfStudy: "Mining Engineering",
-  },
-  {
-    name: "Moges Zeleke",
-    quote: "",
-    image_urls: [
-      "https://drive.google.com/uc?export=view&id=1PqSVZe1JCwiMGbuS7N4HTT5xNHik7FDN",
-    ],
-    video_urls: [],
-    fieldOfStudy: "Mining Engineering",
-  },
+ 
+
 ];

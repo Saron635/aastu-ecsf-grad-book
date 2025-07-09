@@ -33,6 +33,8 @@ interface Student {
   image_urls: string[];
   video_urls: string[];
   fieldOfStudy: string;
+  role?: string; 
+  
 }
 
 export default function StudentsSection() {
@@ -100,21 +102,26 @@ export default function StudentsSection() {
           >
             <SelectValue placeholder="All Fields" />
           </SelectTrigger>
-          <SelectContent
-            className={`rounded-md shadow-lg mt-1
-              ${
-                isDark
-                  ? "bg-gray-800 text-blue-200 border-gray-700"
-                  : "bg-white text-blue-700 border-gray-200"
-              }`}
-          >
-            <SelectItem value="all">All Fields</SelectItem>
-            {uniqueFields.map((field) => (
-              <SelectItem key={field} value={field}>
-                {field}
-              </SelectItem>
-            ))}
-          </SelectContent>
+                  <SelectContent
+          className={`rounded-md shadow-lg mt-1
+            ${
+              isDark
+                ? "bg-gray-800 text-blue-200 border-gray-700"
+                : "bg-white text-blue-700 border-gray-200"
+            }`}
+        >
+              <SelectItem value="all">All Fields</SelectItem>
+              {uniqueFields
+                .slice()                    // create a shallow copy so original array isn’t mutated
+                .sort((a, b) => a.localeCompare(b))  // sort alphabetically
+                .map((field) => (
+                  <SelectItem key={field} value={field}>
+                    {field}
+                  </SelectItem>
+                ))}
+            </SelectContent>
+
+          
         </Select>
         <div className="relative flex-1">
           <Search
@@ -252,6 +259,7 @@ export default function StudentsSection() {
                       >
                         {student.fieldOfStudy}
                       </span>
+                     
                       <blockquote
                         className={`text-sm sm:text-base md:text-lg lg:text-xl italic font-medium leading-relaxed mb-2 ${
                           isDark ? "text-blue-200" : "text-blue-700"
@@ -259,6 +267,20 @@ export default function StudentsSection() {
                       >
                         {student.quote || ""}
                       </blockquote>
+                       {student.role && (
+                          <span
+                            className={`inline-block mb-2 sm:mb-3 md:mb-4 px-2 sm:px-3 md:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-sm ${
+                              isDark
+                                     ? "bg-pink-900 text-pink-200"
+                                    : "bg-pink-100 text-pink-700"
+
+                               
+                            }`}
+                          >
+                            {student.role}
+                          </span>
+                        )}
+
                     </div>
                   </div>
                 );
