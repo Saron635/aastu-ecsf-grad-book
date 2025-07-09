@@ -4,7 +4,9 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Graduation Book',
   description: 'Digital Graduation Book',
-  generator: 'Next.js',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
@@ -14,8 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head> <link rel="icon" href="/favicon.ico" /></head>
-      <body className='font-[poppins]'>{children}</body>
+      <body className="font-[poppins]">
+        {children}
+      </body>
     </html>
   )
 }
