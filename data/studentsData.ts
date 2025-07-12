@@ -283,7 +283,7 @@ export const studentsData = [
     ],
     video_urls: [],
     fieldOfStudy: "Software Engineering",
-    role: "Department "
+    role: "Department Committee"
   },
 
 
